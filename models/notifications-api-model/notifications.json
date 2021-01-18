@@ -395,6 +395,9 @@
   "paths":{
     "/notifications/v1/subscriptions/{notificationType}":{
       "post":{
+        "x-grantless": {
+          "scope": "sellingpartnerapi::notifications"
+        },
         "tags":[
           "notifications"
         ],
@@ -560,6 +563,9 @@
         }
       },
       "get":{
+        "x-grantless": {
+          "scope": "sellingpartnerapi::notifications"
+        },
         "tags":[
           "notifications"
         ],
@@ -708,6 +714,9 @@
     },
     "/notifications/v1/subscriptions/{notificationType}/{subscriptionId}":{
       "delete":{
+        "x-grantless": {
+          "scope": "sellingpartnerapi::notifications"
+        },
         "tags":[
           "notifications"
         ],
@@ -863,6 +872,9 @@
         }
       },
       "get":{
+        "x-grantless": {
+          "scope": "sellingpartnerapi::notifications"
+        },
         "tags":[
           "notifications"
         ],
@@ -1030,6 +1042,9 @@
     },
     "/notifications/v1/destinations":{
       "post":{
+        "x-grantless": {
+          "scope": "sellingpartnerapi::notifications"
+        },
         "tags":[
           "notifications"
         ],
@@ -1201,6 +1216,9 @@
         }
       },
       "get":{
+        "x-grantless": {
+          "scope": "sellingpartnerapi::notifications"
+        },
         "tags":[
           "notifications"
         ],
@@ -1370,6 +1388,9 @@
     },
     "/notifications/v1/destinations/{destinationId}":{
       "get":{
+        "x-grantless": {
+          "scope": "sellingpartnerapi::notifications"
+        },
         "tags":[
           "notifications"
         ],
@@ -1540,6 +1561,9 @@
         }
       },
       "delete":{
+        "x-grantless": {
+          "scope": "sellingpartnerapi::notifications"
+        },
         "tags":[
           "notifications"
         ],

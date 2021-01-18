@@ -26,6 +26,9 @@
   "paths": {
     "/authorization/v1/authorizationCode": {
       "get": {
+        "x-grantless": {
+          "scope": "sellingpartnerapi::migration"
+        },
         "tags": [
           "authorization"
         ],
