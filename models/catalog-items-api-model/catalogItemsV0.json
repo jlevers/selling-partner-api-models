@@ -961,7 +961,7 @@
         }
       }
     },
-    "Item": {
+    "CatalogItem": {
       "description": "An item in the Amazon catalog.",
       "type": "object",
       "required": [

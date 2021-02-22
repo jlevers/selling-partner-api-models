@@ -175,7 +175,7 @@
         }
       }
     },
-    "Item": {
+    "FBAItem": {
       "description": "An item to be sold.",
       "type": "object",
       "required": [
