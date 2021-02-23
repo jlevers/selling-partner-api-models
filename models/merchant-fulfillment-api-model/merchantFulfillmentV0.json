@@ -2891,7 +2891,7 @@
         }
       ]
     },
-    "Item": {
+    "FBMItem": {
       "description": "An Amazon order item identifier and a quantity.",
       "type": "object",
       "required": [
@@ -2924,7 +2924,7 @@
       "description": "The list of items to be included in a shipment.",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/Item"
+        "$ref": "#/definitions/FBMItem"
       }
     },
     "ItemQuantity": {

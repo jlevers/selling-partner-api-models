@@ -2137,10 +2137,10 @@
       "description": "A list of sales rank information for the item, by category.",
       "type" : "array",
       "items" : {
-        "$ref" : "#/definitions/SalesRankType"
+        "$ref" : "#/definitions/SalesRank"
       }
     },
-    "SalesRankType" : {
+    "SalesRank" : {
       "type" : "object",
       "required" : [ "ProductCategoryId", "Rank" ],
       "properties" : {
