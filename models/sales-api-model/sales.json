@@ -722,8 +722,7 @@
                 "value": "All",
                 "description": "Business to business and business to customer."
               }
-            ],
-            "default": "All"
+            ]
           },
           {
             "name": "fulfillmentNetwork",
@@ -749,8 +748,7 @@
                 "value": "Sunday",
                 "description": "Sunday"
               }
-            ],
-            "default": "Monday"
+            ]
           },
           {
             "name": "asin",
