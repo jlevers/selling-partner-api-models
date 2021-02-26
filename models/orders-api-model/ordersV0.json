@@ -27,7 +27,7 @@
     "/orders/v0/orders": {
       "get": {
         "tags": [
-          "ordersV0"
+          "orders"
         ],
         "description": "Returns orders created or updated during the time frame indicated by the specified parameters. You can also apply a range of filtering criteria to narrow the list of orders returned. If NextToken is present, that will be used to retrieve the orders instead of other criteria.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getOrders",
@@ -392,7 +392,7 @@
     "/orders/v0/orders/{orderId}": {
       "get": {
         "tags": [
-          "ordersV0"
+          "orders"
         ],
         "description": "Returns the order indicated by the specified order ID.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getOrder",
@@ -671,7 +671,7 @@
     "/orders/v0/orders/{orderId}/buyerInfo": {
       "get": {
         "tags": [
-          "ordersV0"
+          "orders"
         ],
         "description": "Returns buyer information for the order indicated by the specified order ID.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getOrderBuyerInfo",
@@ -826,7 +826,7 @@
     "/orders/v0/orders/{orderId}/address": {
       "get": {
         "tags": [
-          "ordersV0"
+          "orders"
         ],
         "description": "Returns the shipping address for the order indicated by the specified order ID.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getOrderAddress",
@@ -991,7 +991,7 @@
     "/orders/v0/orders/{orderId}/orderItems": {
       "get": {
         "tags": [
-          "ordersV0"
+          "orders"
         ],
         "description": "Returns detailed order item information for the order indicated by the specified order ID. If NextToken is provided, it's used to retrieve the next page of order items.\n\nNote: When an order is in the Pending state (the order has been placed but payment has not been authorized), the getOrderItems operation does not return information about pricing, taxes, shipping charges, gift status or promotions for the order items in the order. After an order leaves the Pending state (this occurs when payment has been authorized) and enters the Unshipped, Partially Shipped, or Shipped state, the getOrderItems operation returns information about pricing, taxes, shipping charges, gift status and promotions for the order items in the order.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getOrderItems",
@@ -1231,7 +1231,7 @@
     "/orders/v0/orders/{orderId}/orderItems/buyerInfo": {
       "get": {
         "tags": [
-          "ordersV0"
+          "orders"
         ],
         "description": "Returns buyer information in the order items of the order indicated by the specified order ID.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getOrderItemsBuyerInfo",
