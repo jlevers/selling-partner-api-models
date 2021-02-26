@@ -4,6 +4,7 @@
     "description": "The Selling Partner API for Merchant Fulfillment helps you build applications that let sellers purchase shipping for non-Prime and Prime orders using Amazon’s Buy Shipping Services.",
     "version": "v0",
     "title": "Selling Partner API for Merchant Fulfillment",
+    "x-shortname": "MerchantFulfillment",
     "contact": {
       "name": "Selling Partner API Developer Support",
       "url": "https://sellercentral.amazon.com/gp/mws/contactus.html"

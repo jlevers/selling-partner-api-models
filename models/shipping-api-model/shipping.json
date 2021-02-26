@@ -3,6 +3,7 @@
   "info": {
     "title": "Selling Partner API for Shipping",
     "description": "Provides programmatic access to Amazon Shipping APIs.",
+    "x-grantless": "Shipping",
     "version": "v1",
     "contact": {
       "name": "Selling Partner API Developer Support",

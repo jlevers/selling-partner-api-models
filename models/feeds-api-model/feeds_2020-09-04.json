@@ -4,6 +4,7 @@
     "description": "The Selling Partner API for Feeds lets you upload data to Amazon on behalf of a selling partner.",
     "version": "2020-09-04",
     "title": "Selling Partner API for Feeds",
+    "x-grantless": "Feeds",
     "contact": {
       "name": "Selling Partner API Developer Support",
       "url": "https://sellercentral.amazon.com/gp/mws/contactus.html"

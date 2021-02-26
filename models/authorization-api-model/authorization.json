@@ -4,6 +4,7 @@
     "description": "The Selling Partner API for Authorization helps developers manage authorizations and check the specific permissions associated with a given authorization.",
     "version": "v1",
     "title": "Selling Partner API for Authorization",
+    "x-shortname": "Authorization",
     "contact": {
       "name": "Selling Partner API Developer Support",
       "url": "https://sellercentral.amazon.com/gp/mws/contactus.html"

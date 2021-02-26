@@ -4,6 +4,7 @@
     "description": "The Selling Partner API for Catalog Items helps you programmatically retrieve item details for items in the catalog.",
     "version": "v0",
     "title": "Selling Partner API for Catalog Items",
+    "x-shortname": "Catalog",
     "contact": {
       "name": "Selling Partner API Developer Support",
       "url": "https://sellercentral.amazon.com/gp/mws/contactus.html"

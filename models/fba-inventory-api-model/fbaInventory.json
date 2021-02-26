@@ -2,6 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Selling Partner API for FBA Inventory",
+    "x-shortname": "FbaInventory",
     "description": "The Selling Partner API for FBA Inventory lets you programmatically retrieve information about inventory in Amazon's fulfillment network.",
     "version": "v1",
     "contact": {

@@ -3,6 +3,7 @@
   "info": {
     "title": "Selling Partner API for Services",
     "description": "With the Services API, you can build applications that help service providers get and modify their service orders.",
+    "x-grantless": "Service",
     "version": "v1",
     "contact": {
       "name": "Selling Partner API Developer Support",

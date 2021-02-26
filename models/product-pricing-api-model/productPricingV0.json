@@ -3,6 +3,7 @@
   "info": {
     "title": "Selling Partner API for Pricing",
     "description": "The Selling Partner API for Pricing helps you programmatically retrieve product pricing and offer information for Amazon Marketplace products.",
+    "x-shortname": "ProductPricing",
     "version": "v0",
     "contact": {
       "name": "Selling Partner API Developer Support",

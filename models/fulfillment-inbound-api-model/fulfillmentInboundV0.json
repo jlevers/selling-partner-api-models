@@ -4,6 +4,7 @@
     "description": "The Selling Partner API for Fulfillment Inbound lets you create applications that create and update inbound shipments of inventory to Amazon's fulfillment network.",
     "version": "v0",
     "title": "Selling Partner API for Fulfillment Inbound",
+    "x-shortname": "FbaInbound",
     "contact": {
       "name": "Selling Partner API Developer Support",
       "url": "https://sellercentral.amazon.com/gp/mws/contactus.html"
