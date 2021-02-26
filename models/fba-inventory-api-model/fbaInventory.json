@@ -576,7 +576,7 @@
             "description": "true to return inventory summaries with additional summarized inventory details and quantities. Otherwise, returns inventory summaries only (default value).",
             "type": "boolean",
             "in": "query",
-            "name": "details",
+            "name": "detail",
             "default": "false"
           },
           {
