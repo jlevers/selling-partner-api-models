@@ -3,7 +3,7 @@
   "info": {
     "title": "Selling Partner API for Uploads",
     "description": "The Selling Partner API for Uploads provides operations that support uploading files.",
-    "x-grantless": "Uploads",
+    "x-shortname": "Uploads",
     "version": "2020-11-01",
     "contact": {
       "name": "Selling Partner API Developer Support",

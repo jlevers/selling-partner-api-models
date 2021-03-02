@@ -4,7 +4,7 @@
     "description": "The Selling Partner API for Orders helps you programmatically retrieve order information. These APIs let you develop fast, flexible, custom applications in areas like order synchronization, order research, and demand-based decision support tools.",
     "version": "v0",
     "title": "Selling Partner API for Orders",
-    "x-grantless": "Orders",
+    "x-shortname": "Orders",
     "contact": {
       "name": "Selling Partner API Developer Support",
       "url": "https://sellercentral.amazon.com/gp/mws/contactus.html"

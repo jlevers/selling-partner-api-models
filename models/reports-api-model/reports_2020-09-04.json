@@ -4,7 +4,7 @@
     "description": "The Selling Partner API for Reports lets you retrieve and manage a variety of reports that can help selling partners manage their businesses.",
     "version": "2020-09-04",
     "title": "Selling Partner API for Reports",
-    "x-grantless": "Reports",
+    "x-shortname": "Reports",
     "contact": {
       "name": "Selling Partner API Developer Support",
       "url": "https://sellercentral.amazon.com/gp/mws/contactus.html"

@@ -4,7 +4,7 @@
   {
     "title": "Selling Partner API for Sales",
     "description": "The Selling Partner API for Sales provides APIs related to sales performance.",
-    "x-grantless": "Sales",
+    "x-shortname": "Sales",
     "version": "v1",
     "contact":
     {
