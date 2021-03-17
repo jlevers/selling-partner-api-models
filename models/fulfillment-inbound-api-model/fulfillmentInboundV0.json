@@ -5255,7 +5255,8 @@
         "Taping",
         "BlackShrinkWrapping",
         "Labeling",
-        "HangGarment"
+        "HangGarment",
+        "SetCreation"
       ],
       "x-docgen-enum-table-extension": [
         {
