@@ -5256,7 +5256,9 @@
         "BlackShrinkWrapping",
         "Labeling",
         "HangGarment",
-        "SetCreation"
+        "SetCreation",
+        "Boxing",
+	"SuffocationStickering"
       ],
       "x-docgen-enum-table-extension": [
         {
