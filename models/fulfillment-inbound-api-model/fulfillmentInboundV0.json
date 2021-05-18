@@ -5258,7 +5258,8 @@
         "HangGarment",
         "SetCreation",
         "Boxing",
-	"SuffocationStickering"
+        "SuffocationStickering",
+        "SetStickering"
       ],
       "x-docgen-enum-table-extension": [
         {
