@@ -2,6 +2,7 @@
   "swagger": "2.0",
   "info": {
     "description": "The Selling Partner API for Catalog Items provides programmatic access to information about items in the Amazon catalog.",
+    "x-shortname": "Catalog",
     "version": "2020-12-01",
     "title": "Selling Partner API for Catalog Items",
     "contact": {
@@ -112,8 +113,8 @@
               ]
             },
             "collectionFormat": "csv",
-            "x-example": "summaries",
-            "default": "summaries"
+            "x-example": ["summaries"],
+            "default": ["summaries"]
           },
           {
             "name": "brandNames",
@@ -650,8 +651,8 @@
               ]
             },
             "collectionFormat": "csv",
-            "x-example": "summaries",
-            "default": "summaries"
+            "x-example": ["summaries"],
+            "default": ["summaries"]
           },
           {
             "name": "locale",

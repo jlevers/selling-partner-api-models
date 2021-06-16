@@ -2,6 +2,7 @@
   "swagger": "2.0",
   "info": {
     "description": "The Selling Partner API for Direct Fulfillment Inventory Updates provides programmatic access to a direct fulfillment vendor's inventory updates.",
+    "x-shortname": "VendorDirectFulfillmentInventory",
     "version": "v1",
     "title": "Selling Partner API for Direct Fulfillment Inventory Updates",
     "contact": {
@@ -27,7 +28,7 @@
     "/vendor/directFulfillment/inventory/v1/warehouses/{warehouseId}/items": {
       "post": {
         "tags": [
-          "updateInventory"
+          "vendorDirectFulfillmentInventory"
         ],
         "description": "Submits inventory updates for the specified warehouse for either a partial or full feed of inventory items.\n\n**Usage Plans:**\n\n| Plan type | Rate (requests per second) | Burst |\n| ---- | ---- | ---- |\n|Default| 10 | 10 |\n|Selling partner specific| Variable | Variable |\n\nThe x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "submitInventoryUpdate",

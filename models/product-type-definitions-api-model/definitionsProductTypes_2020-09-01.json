@@ -2,6 +2,7 @@
   "swagger": "2.0",
   "info": {
     "description": "The Selling Partner API for Product Type Definitions provides programmatic access to attribute and data requirements for product types in the Amazon catalog. Use this API to return the JSON Schema for a product type that you can then use with other Selling Partner APIs, such as the Selling Partner API for Listings Items, the Selling Partner API for Catalog Items, and the Selling Partner API for Feeds (for JSON-based listing feeds).",
+    "x-shortname": "ProductTypeDefinitions",
     "version": "2020-09-01",
     "title": "Selling Partner API for Product Type Definitions",
     "contact": {
@@ -27,7 +28,7 @@
     "/definitions/2020-09-01/productTypes": {
       "get": {
         "tags": [
-          "definitions"
+          "productTypeDefinitions"
         ],
         "description": "Search for and return a list of Amazon product types that have definitions available.\n\n**Usage Plans:**\n\n| Plan type | Rate (requests per second) | Burst |\n| ---- | ---- | ---- |\n|Default| 5 | 10 |\n|Selling partner specific| Variable | Variable |\n\nThe x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "searchDefinitionsProductTypes",
@@ -258,7 +259,7 @@
     "/definitions/2020-09-01/productTypes/{productType}": {
       "get": {
         "tags": [
-          "definitions"
+          "productTypeDefinitions"
         ],
         "description": "Retrieve an Amazon product type definition.\n\n**Usage Plans:**\n\n| Plan type | Rate (requests per second) | Burst |\n| ---- | ---- | ---- |\n|Default| 5 | 10 |\n|Selling partner specific| Variable | Variable |\n\nThe x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getDefinitionsProductType",

@@ -2,6 +2,7 @@
   "swagger": "2.0",
   "info": {
     "description": "The Selling Partner API for Reports lets you retrieve and manage a variety of reports that can help selling partners manage their businesses.",
+    "x-shortname": "Reports",
     "version": "2021-06-30",
     "title": "Selling Partner API for Reports",
     "contact": {

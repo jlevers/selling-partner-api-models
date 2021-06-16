@@ -2,6 +2,7 @@
   "swagger": "2.0",
   "info": {
     "description": "The Selling Partner API for Feeds lets you upload data to Amazon on behalf of a selling partner.",
+    "x-shortname": "Feeds",
     "version": "2021-06-30",
     "title": "Selling Partner API for Feeds",
     "contact": {
