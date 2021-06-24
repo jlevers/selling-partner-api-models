@@ -2,9 +2,9 @@
   "swagger": "2.0",
   "info": {
     "description": "The Selling Partner API for Reports lets you retrieve and manage a variety of reports that can help selling partners manage their businesses.",
-    "x-shortname": "Reports",
-    "version": "2021-06-30",
+    "version": "2020-09-04",
     "title": "Selling Partner API for Reports",
+    "x-shortname": "Reports",
     "contact": {
       "name": "Selling Partner API Developer Support",
       "url": "https://sellercentral.amazon.com/gp/mws/contactus.html"
@@ -25,7 +25,7 @@
     "application/json"
   ],
   "paths": {
-    "/reports/2021-06-30/reports": {
+    "/reports/2020-09-04/reports": {
       "get": {
         "tags": [
           "reports"
@@ -138,11 +138,7 @@
               "$ref": "#/definitions/GetReportsResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -167,7 +163,7 @@
                 },
                 "response": {
                   "nextToken": "VGhpcyB0b2tlbiBpcyBvcGFxdWUgYW5kIGludGVudGlvbmFsbHkgb2JmdXNjYXRlZA==",
-                  "reports": [
+                  "payload": [
                     {
                       "reportId": "ReportId1",
                       "reportType": "FEE_DISCOUNTS_REPORT",
@@ -186,14 +182,10 @@
           "400": {
             "description": "Request has missing or invalid parameters and cannot be parsed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportsResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -231,14 +223,10 @@
           "401": {
             "description": "The request's Authorization header is not formatted correctly or does not contain a valid token.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportsResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -247,10 +235,10 @@
           "403": {
             "description": "Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expired Token, or Invalid Signature.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportsResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -259,10 +247,10 @@
           "404": {
             "description": "The specified resource does not exist.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportsResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -271,14 +259,10 @@
           "415": {
             "description": "The request's Content-Type header is invalid.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportsResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -287,14 +271,10 @@
           "429": {
             "description": "The frequency of requests was greater than allowed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportsResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -303,14 +283,10 @@
           "500": {
             "description": "An unexpected condition occurred that prevented the server from fulfilling the request.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportsResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -319,14 +295,10 @@
           "503": {
             "description": "Temporary overloading or maintenance of the server.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportsResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -357,11 +329,7 @@
               "$ref": "#/definitions/CreateReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -383,7 +351,9 @@
                   }
                 },
                 "response": {
-                  "reportId": "ID323"
+                  "payload": {
+                    "reportId": "ID323"
+                  }
                 }
               }
             ]
@@ -391,14 +361,10 @@
           "400": {
             "description": "Request has missing or invalid parameters and cannot be parsed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -412,8 +378,8 @@
                         "reportType": "BAD_FEE_DISCOUNTS_REPORT",
                         "dataStartTime": "2019-12-10T20:11:24.000Z",
                         "marketplaceIds": [
-                          "A1PA6795UKMFR9",
-                          "ATVPDKIKX0DER"
+                            "A1PA6795UKMFR9",
+                            "ATVPDKIKX0DER"
                         ]
                       }
                     }
@@ -434,14 +400,10 @@
           "401": {
             "description": "The request's Authorization header is not formatted correctly or does not contain a valid token.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -450,10 +412,10 @@
           "403": {
             "description": "Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expired Token, or Invalid Signature.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -462,10 +424,10 @@
           "404": {
             "description": "The specified resource does not exist.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -474,14 +436,10 @@
           "415": {
             "description": "The request's Content-Type header is invalid.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -490,14 +448,10 @@
           "429": {
             "description": "The frequency of requests was greater than allowed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -506,14 +460,10 @@
           "500": {
             "description": "An unexpected condition occurred that prevented the server from fulfilling the request.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -522,14 +472,10 @@
           "503": {
             "description": "Temporary overloading or maintenance of the server.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -539,7 +485,7 @@
       },
       "parameters": []
     },
-    "/reports/2021-06-30/reports/{reportId}": {
+    "/reports/2020-09-04/reports/{reportId}": {
       "delete": {
         "tags": [
           "reports"
@@ -558,12 +504,11 @@
         "responses": {
           "200": {
             "description": "Success.",
+            "schema": {
+              "$ref": "#/definitions/CancelReportResponse"
+            },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -576,21 +521,18 @@
                       "value": "ID"
                     }
                   }
-                }
+                },
+                "response": {}
               }
             ]
           },
           "400": {
             "description": "Request has missing or invalid parameters and cannot be parsed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -598,7 +540,8 @@
             "x-amazon-spds-sandbox-behaviors": [
               {
                 "request": {
-                  "parameters": {}
+                  "parameters": {
+                  }
                 },
                 "response": {
                   "errors": [
@@ -615,14 +558,10 @@
           "401": {
             "description": "The request's Authorization header is not formatted correctly or does not contain a valid token.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -631,10 +570,10 @@
           "403": {
             "description": "Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expired Token, or Invalid Signature.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -643,10 +582,10 @@
           "404": {
             "description": "The specified resource does not exist.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -655,14 +594,10 @@
           "415": {
             "description": "The request's Content-Type header is invalid.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -671,14 +606,10 @@
           "429": {
             "description": "The frequency of requests was greater than allowed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -687,14 +618,10 @@
           "500": {
             "description": "An unexpected condition occurred that prevented the server from fulfilling the request.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -703,14 +630,10 @@
           "503": {
             "description": "Temporary overloading or maintenance of the server.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -737,14 +660,10 @@
           "200": {
             "description": "Success.",
             "schema": {
-              "$ref": "#/definitions/Report"
+              "$ref": "#/definitions/GetReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -759,14 +678,16 @@
                   }
                 },
                 "response": {
-                  "reportId": "ReportId1",
-                  "reportType": "FEE_DISCOUNTS_REPORT",
-                  "dataStartTime": "2019-12-11T13:47:20.677Z",
-                  "dataEndTime": "2019-12-12T13:47:20.677Z",
-                  "createdTime": "2019-12-10T13:47:20.677Z",
-                  "processingStatus": "IN_PROGRESS",
-                  "processingStartTime": "2019-12-10T13:47:20.677Z",
-                  "processingEndTime": "2019-12-12T13:47:20.677Z"
+                  "payload": {
+                    "reportId": "ReportId1",
+                    "reportType": "FEE_DISCOUNTS_REPORT",
+                    "dataStartTime": "2019-12-11T13:47:20.677Z",
+                    "dataEndTime": "2019-12-12T13:47:20.677Z",
+                    "createdTime": "2019-12-10T13:47:20.677Z",
+                    "processingStatus": "IN_PROGRESS",
+                    "processingStartTime": "2019-12-10T13:47:20.677Z",
+                    "processingEndTime": "2019-12-12T13:47:20.677Z"
+                  }
                 }
               }
             ]
@@ -774,14 +695,10 @@
           "400": {
             "description": "Request has missing or invalid parameters and cannot be parsed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -810,14 +727,10 @@
           "401": {
             "description": "The request's Authorization header is not formatted correctly or does not contain a valid token.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -826,10 +739,10 @@
           "403": {
             "description": "Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expired Token, or Invalid Signature.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -838,10 +751,10 @@
           "404": {
             "description": "The specified resource does not exist.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -850,14 +763,10 @@
           "415": {
             "description": "The request's Content-Type header is invalid.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -866,14 +775,10 @@
           "429": {
             "description": "The frequency of requests was greater than allowed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -882,14 +787,10 @@
           "500": {
             "description": "An unexpected condition occurred that prevented the server from fulfilling the request.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -898,14 +799,10 @@
           "503": {
             "description": "Temporary overloading or maintenance of the server.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -915,7 +812,7 @@
       },
       "parameters": []
     },
-    "/reports/2021-06-30/schedules": {
+    "/reports/2020-09-04/schedules": {
       "get": {
         "tags": [
           "reports"
@@ -940,14 +837,10 @@
           "200": {
             "description": "Success.",
             "schema": {
-              "$ref": "#/definitions/ReportScheduleList"
+              "$ref": "#/definitions/GetReportSchedulesResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -965,7 +858,7 @@
                   }
                 },
                 "response": {
-                  "reportSchedules": [
+                  "payload": [
                     {
                       "reportType": "FEE_DISCOUNTS_REPORT",
                       "marketplaceIds": [
@@ -989,14 +882,10 @@
           "400": {
             "description": "Request has missing or invalid parameters and cannot be parsed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportSchedulesResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1028,14 +917,10 @@
           "401": {
             "description": "The request's Authorization header is not formatted correctly or does not contain a valid token.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportSchedulesResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1044,10 +929,10 @@
           "403": {
             "description": "Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expired Token, or Invalid Signature.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportSchedulesResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1056,10 +941,10 @@
           "404": {
             "description": "The specified resource does not exist.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportSchedulesResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1068,14 +953,10 @@
           "415": {
             "description": "The request's Content-Type header is invalid.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportSchedulesResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1084,14 +965,10 @@
           "429": {
             "description": "The frequency of requests was greater than allowed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportSchedulesResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1100,14 +977,10 @@
           "500": {
             "description": "An unexpected condition occurred that prevented the server from fulfilling the request.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportSchedulesResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1116,14 +989,10 @@
           "503": {
             "description": "Temporary overloading or maintenance of the server.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportSchedulesResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1154,11 +1023,7 @@
               "$ref": "#/definitions/CreateReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1181,7 +1046,9 @@
                   }
                 },
                 "response": {
-                  "reportScheduleId": "ID323"
+                  "payload": {
+                    "reportScheduleId": "ID323"
+                  }
                 }
               }
             ]
@@ -1189,14 +1056,10 @@
           "400": {
             "description": "Request has missing or invalid parameters and cannot be parsed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1229,14 +1092,10 @@
           "401": {
             "description": "The request's Authorization header is not formatted correctly or does not contain a valid token.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1245,10 +1104,10 @@
           "403": {
             "description": "Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expired Token, or Invalid Signature.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1257,10 +1116,10 @@
           "404": {
             "description": "The specified resource does not exist.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1269,14 +1128,10 @@
           "415": {
             "description": "The request's Content-Type header is invalid.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1285,14 +1140,10 @@
           "429": {
             "description": "The frequency of requests was greater than allowed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1301,14 +1152,10 @@
           "500": {
             "description": "An unexpected condition occurred that prevented the server from fulfilling the request.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1317,14 +1164,10 @@
           "503": {
             "description": "Temporary overloading or maintenance of the server.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CreateReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1334,7 +1177,7 @@
       },
       "parameters": []
     },
-    "/reports/2021-06-30/schedules/{reportScheduleId}": {
+    "/reports/2020-09-04/schedules/{reportScheduleId}": {
       "delete": {
         "tags": [
           "reports"
@@ -1353,12 +1196,11 @@
         "responses": {
           "200": {
             "description": "Success.",
+            "schema": {
+              "$ref": "#/definitions/CancelReportScheduleResponse"
+            },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1371,21 +1213,18 @@
                       "value": "ID"
                     }
                   }
-                }
+                },
+                "response": {}
               }
             ]
           },
           "400": {
             "description": "Request has missing or invalid parameters and cannot be parsed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1393,7 +1232,8 @@
             "x-amazon-spds-sandbox-behaviors": [
               {
                 "request": {
-                  "parameters": {}
+                  "parameters": {
+                  }
                 },
                 "response": {
                   "errors": [
@@ -1410,14 +1250,10 @@
           "401": {
             "description": "The request's Authorization header is not formatted correctly or does not contain a valid token.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1426,10 +1262,10 @@
           "403": {
             "description": "Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expired Token, or Invalid Signature.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1438,10 +1274,10 @@
           "404": {
             "description": "The specified resource does not exist.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1450,14 +1286,10 @@
           "415": {
             "description": "The request's Content-Type header is invalid.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1466,14 +1298,10 @@
           "429": {
             "description": "The frequency of requests was greater than allowed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1482,14 +1310,10 @@
           "500": {
             "description": "An unexpected condition occurred that prevented the server from fulfilling the request.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1498,14 +1322,10 @@
           "503": {
             "description": "Temporary overloading or maintenance of the server.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/CancelReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1532,14 +1352,10 @@
           "200": {
             "description": "Success.",
             "schema": {
-              "$ref": "#/definitions/ReportSchedule"
+              "$ref": "#/definitions/GetReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1554,10 +1370,12 @@
                   }
                 },
                 "response": {
-                  "reportScheduleId": "ReportScheduleId1",
-                  "reportType": "FEE_DISCOUNTS_REPORT",
-                  "period": "PT5M",
-                  "nextReportCreationTime": "2019-12-12T13:47:20.677Z"
+                  "payload": {
+                    "reportScheduleId": "ReportScheduleId1",
+                    "reportType": "FEE_DISCOUNTS_REPORT",
+                    "period": "PT5M",
+                    "nextReportCreationTime": "2019-12-12T13:47:20.677Z"
+                  }
                 }
               }
             ]
@@ -1565,14 +1383,10 @@
           "400": {
             "description": "Request has missing or invalid parameters and cannot be parsed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1601,14 +1415,10 @@
           "401": {
             "description": "The request's Authorization header is not formatted correctly or does not contain a valid token.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1617,10 +1427,10 @@
           "403": {
             "description": "Indicates that access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expired Token, or Invalid Signature.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1629,10 +1439,10 @@
           "404": {
             "description": "The specified resource does not exist.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1641,14 +1451,10 @@
           "415": {
             "description": "The request's Content-Type header is invalid.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1657,14 +1463,10 @@
           "429": {
             "description": "The frequency of requests was greater than allowed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1673,14 +1475,10 @@
           "500": {
             "description": "An unexpected condition occurred that prevented the server from fulfilling the request.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1689,14 +1487,10 @@
           "503": {
             "description": "Temporary overloading or maintenance of the server.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportScheduleResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1706,12 +1500,12 @@
       },
       "parameters": []
     },
-    "/reports/2021-06-30/documents/{reportDocumentId}": {
+    "/reports/2020-09-04/documents/{reportDocumentId}": {
       "get": {
         "tags": [
           "reports"
         ],
-        "description": "Returns the information required for retrieving a report document's contents.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 0.0167 | 15 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns the information required for retrieving a report document's contents. This includes a presigned URL for the report document as well as the information required to decrypt the document's contents.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 0.0167 | 15 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getReportDocument",
         "parameters": [
           {
@@ -1726,14 +1520,10 @@
           "200": {
             "description": "Success.",
             "schema": {
-              "$ref": "#/definitions/ReportDocument"
+              "$ref": "#/definitions/GetReportDocumentResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference ID."
               }
@@ -1748,8 +1538,15 @@
                   }
                 },
                 "response": {
-                  "reportDocumentId": "0356cf79-b8b0-4226-b4b9-0ee058ea5760",
-                  "url": "https://d34o8swod1owfl.cloudfront.net/SampleResult%2BKey%3DSample%2BINITVEC%3D58+fa+bf+a7+08+11+95+0f+c1+a8+c6+e0+d5+6f+ae+c8"
+                  "payload": {
+                    "reportDocumentId": "0356cf79-b8b0-4226-b4b9-0ee058ea5760",
+                    "url": "https://d34o8swod1owfl.cloudfront.net/SampleResult%2BKey%3DSample%2BINITVEC%3D58+fa+bf+a7+08+11+95+0f+c1+a8+c6+e0+d5+6f+ae+c8",
+                    "encryptionDetails": {
+                      "standard": "AES",
+                      "initializationVector": "58 fa bf a7 08 11 95 0f c1 a8 c6 e0 d5 6f ae c8",
+                      "key": "Sample"
+                    }
+                  }
                 }
               }
             ]
@@ -1757,14 +1554,10 @@
           "400": {
             "description": "Request has missing or invalid parameters and cannot be parsed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportDocumentResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference ID."
               }
@@ -1793,14 +1586,10 @@
           "401": {
             "description": "The request's Authorization header is not formatted correctly or does not contain a valid token.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportDocumentResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference ID."
               }
@@ -1809,10 +1598,10 @@
           "403": {
             "description": "Indicates access to the resource is forbidden. Possible reasons include Access Denied, Unauthorized, Expired Token, or Invalid Signature.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportDocumentResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference ID."
               }
@@ -1821,10 +1610,10 @@
           "404": {
             "description": "The specified resource does not exist.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportDocumentResponse"
             },
             "headers": {
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference ID."
               }
@@ -1833,14 +1622,10 @@
           "415": {
             "description": "The request's Content-Type header is invalid.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportDocumentResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference identifier."
               }
@@ -1849,14 +1634,10 @@
           "429": {
             "description": "The frequency of requests was greater than allowed.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportDocumentResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference ID."
               }
@@ -1865,14 +1646,10 @@
           "500": {
             "description": "An unexpected condition occurred that prevented the server from fulfilling the request.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportDocumentResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference ID."
               }
@@ -1881,14 +1658,10 @@
           "503": {
             "description": "Temporary overloading or maintenance of the server.",
             "schema": {
-              "$ref": "#/definitions/ErrorList"
+              "$ref": "#/definitions/GetReportDocumentResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "description": "Your rate limit (requests per second) for this operation.",
-                "type": "string"
-              },
-              "x-amzn-requestid": {
+              "x-amzn-RequestId": {
                 "type": "string",
                 "description": "Unique request reference ID."
               }
@@ -1900,18 +1673,10 @@
   },
   "definitions": {
     "ErrorList": {
-      "type": "object",
+      "type": "array",
       "description": "A list of error responses returned when a request is unsuccessful.",
-      "required": [
-        "errors"
-      ],
-      "properties": {
-        "errors": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Error"
-          }
-        }
+      "items": {
+        "$ref": "#/definitions/Error"
       }
     },
     "Error": {
@@ -1935,6 +1700,38 @@
         }
       },
       "description": "Error response returned when the request is unsuccessful."
+    },
+    "ReportDocumentEncryptionDetails": {
+      "type": "object",
+      "description": "Encryption details required for decryption of a report document's contents.",
+      "required": [
+        "initializationVector",
+        "key",
+        "standard"
+      ],
+      "properties": {
+        "standard": {
+          "description": "The encryption standard required to decrypt the document contents.",
+          "type": "string",
+          "enum": [
+            "AES"
+          ],
+          "x-docgen-enum-table-extension": [
+            {
+              "value": "AES",
+              "description": "The Advanced Encryption Standard (AES)."
+            }
+          ]
+        },
+        "initializationVector": {
+          "type": "string",
+          "description": "The vector to decrypt the document contents using Cipher Block Chaining (CBC)."
+        },
+        "key": {
+          "type": "string",
+          "description": "The encryption key used to decrypt the document contents."
+        }
+      }
     },
     "Report": {
       "type": "object",
@@ -2023,7 +1820,7 @@
           "format": "date-time"
         },
         "reportDocumentId": {
-          "description": "The identifier for the report document. Pass this into the getReportDocument operation to get the information you will need to retrieve the report document's contents.",
+          "description": "The identifier for the report document. Pass this into the getReportDocument operation to get the information you will need to retrieve and decrypt the report document's contents.",
           "type": "string"
         }
       }
@@ -2244,20 +2041,12 @@
       }
     },
     "ReportScheduleList": {
-      "type": "object",
-      "required": [
-        "reportSchedules"
-      ],
-      "properties": {
-        "reportSchedules": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ReportSchedule"
-          }
-        }
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ReportSchedule"
       }
     },
-    "CreateReportResponse": {
+    "CreateReportResult": {
       "type": "object",
       "required": [
         "reportId"
@@ -2271,22 +2060,92 @@
     },
     "GetReportsResponse": {
       "type": "object",
-      "required": [
-        "reports"
-      ],
       "properties": {
-        "reports": {
-          "description": "The reports.",
+        "payload": {
+          "description": "The payload for the getReports operation.",
           "$ref": "#/definitions/ReportList"
         },
         "nextToken": {
           "description": "Returned when the number of results exceeds pageSize. To get the next page of results, call getReports with this token as the only parameter.",
           "type": "string"
+        },
+        "errors": {
+          "$ref": "#/definitions/ErrorList"
         }
       },
       "description": "The response for the getReports operation."
     },
-    "CreateReportScheduleResponse": {
+    "CreateReportResponse": {
+      "type": "object",
+      "properties": {
+        "payload": {
+          "description": "The payload for the createReport operation.",
+          "$ref": "#/definitions/CreateReportResult"
+        },
+        "errors": {
+          "$ref": "#/definitions/ErrorList"
+        }
+      },
+      "description": "The response for the createReport operation."
+    },
+    "CancelReportResponse": {
+      "type": "object",
+      "properties": {
+        "errors": {
+          "$ref": "#/definitions/ErrorList"
+        }
+      },
+      "description": "The response for the cancelReport operation."
+    },
+    "CancelReportScheduleResponse": {
+      "type": "object",
+      "properties": {
+        "errors": {
+          "$ref": "#/definitions/ErrorList"
+        }
+      },
+      "description": "The response for the cancelReportSchedule operation."
+    },
+    "GetReportResponse": {
+      "type": "object",
+      "properties": {
+        "payload": {
+          "description": "The payload for the getReport operation.",
+          "$ref": "#/definitions/Report"
+        },
+        "errors": {
+          "$ref": "#/definitions/ErrorList"
+        }
+      },
+      "description": "The response for the getReport operation."
+    },
+    "GetReportSchedulesResponse": {
+      "type": "object",
+      "properties": {
+        "payload": {
+          "description": "The payload for the getReportSchedules operation.",
+          "$ref": "#/definitions/ReportScheduleList"
+        },
+        "errors": {
+          "$ref": "#/definitions/ErrorList"
+        }
+      },
+      "description": "The response for the getReportSchedules operation."
+    },
+    "GetReportScheduleResponse": {
+      "type": "object",
+      "properties": {
+        "payload": {
+          "description": "The payload for the getReportSchedule operation.",
+          "$ref": "#/definitions/ReportSchedule"
+        },
+        "errors": {
+          "$ref": "#/definitions/ErrorList"
+        }
+      },
+      "description": "The response for the getReportSchedule operation."
+    },
+    "CreateReportScheduleResult": {
       "type": "object",
       "required": [
         "reportScheduleId"
@@ -2298,10 +2157,24 @@
         }
       }
     },
+    "CreateReportScheduleResponse": {
+      "type": "object",
+      "properties": {
+        "payload": {
+          "description": "The payload for the createReportSchedule operation.",
+          "$ref": "#/definitions/CreateReportScheduleResult"
+        },
+        "errors": {
+          "$ref": "#/definitions/ErrorList"
+        }
+      },
+      "description": "The response for the createReportSchedule operation."
+    },
     "ReportDocument": {
       "type": "object",
       "required": [
         "reportDocumentId",
+        "encryptionDetails",
         "url"
       ],
       "properties": {
@@ -2312,6 +2185,9 @@
         "url": {
           "description": "A presigned URL for the report document. This URL expires after 5 minutes.",
           "type": "string"
+        },
+        "encryptionDetails": {
+          "$ref": "#/definitions/ReportDocumentEncryptionDetails"
         },
         "compressionAlgorithm": {
           "description": "If present, the report document contents have been compressed with the provided algorithm.",
@@ -2327,6 +2203,18 @@
           ]
         }
       }
+    },
+    "GetReportDocumentResponse": {
+      "type": "object",
+      "properties": {
+        "payload": {
+          "$ref": "#/definitions/ReportDocument"
+        },
+        "errors": {
+          "$ref": "#/definitions/ErrorList"
+        }
+      },
+      "description": "Response schema."
     }
   },
   "basePath": "/"
