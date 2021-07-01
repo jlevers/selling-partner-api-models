@@ -30,7 +30,7 @@
         "tags": [
           "orders"
         ],
-        "description": "Returns orders created or updated during the time frame indicated by the specified parameters. You can also apply a range of filtering criteria to narrow the list of orders returned. If NextToken is present, that will be used to retrieve the orders instead of other criteria.\n\n**Usage Plans:**\n\n| Plan type | Rate (requests per second) | Burst |\n| ---- | ---- | ---- |\n|Default| 0.0055 | 20 |\n|Selling partner specific| Variable | Variable |\n\nThe x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns orders created or updated during the time frame indicated by the specified parameters. You can also apply a range of filtering criteria to narrow the list of orders returned. If NextToken is present, that will be used to retrieve the orders instead of other criteria.<br /><br />**Usage Plans:**<br /><br />| Plan type | Rate (requests per second) | Burst |<br />| ---- | ---- | ---- |<br />|Default| 0.0055 | 20 |<br />|Selling partner specific| Variable | Variable |<br /><br />The x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getOrders",
         "parameters": [
           {
@@ -535,7 +535,7 @@
         "tags": [
           "orders"
         ],
-        "description": "Returns the order indicated by the specified order ID.\n\n**Usage Plans:**\n\n| Plan type | Rate (requests per second) | Burst |\n| ---- | ---- | ---- |\n|Default| 0.0055 | 20 |\n|Selling partner specific| Variable | Variable |\n\nThe x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns the order indicated by the specified order ID.<br /><br />**Usage Plans:**<br /><br />| Plan type | Rate (requests per second) | Burst |<br />| ---- | ---- | ---- |<br />|Default| 0.0055 | 20 |<br />|Selling partner specific| Variable | Variable |<br /><br />The x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getOrder",
         "parameters": [
           {
@@ -840,7 +840,7 @@
         "tags": [
           "orders"
         ],
-        "description": "Returns buyer information for the order indicated by the specified order ID.\n\n**Usage Plans:**\n\n| Plan type | Rate (requests per second) | Burst |\n| ---- | ---- | ---- |\n|Default| 0.0055 | 20 |\n|Selling partner specific| Variable | Variable |\n\nThe x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns buyer information for the order indicated by the specified order ID.<br /><br />**Usage Plans:**<br /><br />| Plan type | Rate (requests per second) | Burst |<br />| ---- | ---- | ---- |<br />|Default| 0.0055 | 20 |<br />|Selling partner specific| Variable | Variable |<br /><br />The x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getOrderBuyerInfo",
         "parameters": [
           {
@@ -1018,7 +1018,7 @@
         "tags": [
           "orders"
         ],
-        "description": "Returns the shipping address for the order indicated by the specified order ID.\n\n**Usage Plans:**\n\n| Plan type | Rate (requests per second) | Burst |\n| ---- | ---- | ---- |\n|Default| 0.0055 | 20 |\n|Selling partner specific| Variable | Variable |\n\nThe x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns the shipping address for the order indicated by the specified order ID.<br /><br />**Usage Plans:**<br /><br />| Plan type | Rate (requests per second) | Burst |<br />| ---- | ---- | ---- |<br />|Default| 0.0055 | 20 |<br />|Selling partner specific| Variable | Variable |<br /><br />The x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getOrderAddress",
         "parameters": [
           {
@@ -1206,7 +1206,7 @@
         "tags": [
           "orders"
         ],
-        "description": "Returns detailed order item information for the order indicated by the specified order ID. If NextToken is provided, it's used to retrieve the next page of order items.\n\nNote: When an order is in the Pending state (the order has been placed but payment has not been authorized), the getOrderItems operation does not return information about pricing, taxes, shipping charges, gift status or promotions for the order items in the order. After an order leaves the Pending state (this occurs when payment has been authorized) and enters the Unshipped, Partially Shipped, or Shipped state, the getOrderItems operation returns information about pricing, taxes, shipping charges, gift status and promotions for the order items in the order.\n\n**Usage Plans:**\n\n| Plan type | Rate (requests per second) | Burst |\n| ---- | ---- | ---- |\n|Default| 0.0055 | 20 |\n|Selling partner specific| Variable | Variable |\n\nThe x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns detailed order item information for the order indicated by the specified order ID. If NextToken is provided, it's used to retrieve the next page of order items.<br /><br />Note: When an order is in the Pending state (the order has been placed but payment has not been authorized), the getOrderItems operation does not return information about pricing, taxes, shipping charges, gift status or promotions for the order items in the order. After an order leaves the Pending state (this occurs when payment has been authorized) and enters the Unshipped, Partially Shipped, or Shipped state, the getOrderItems operation returns information about pricing, taxes, shipping charges, gift status and promotions for the order items in the order.<br /><br />**Usage Plans:**<br /><br />| Plan type | Rate (requests per second) | Burst |<br />| ---- | ---- | ---- |<br />|Default| 0.0055 | 20 |<br />|Selling partner specific| Variable | Variable |<br /><br />The x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getOrderItems",
         "parameters": [
           {
@@ -1471,7 +1471,7 @@
         "tags": [
           "orders"
         ],
-        "description": "Returns buyer information in the order items of the order indicated by the specified order ID.\n\n**Usage Plans:**\n\n| Plan type | Rate (requests per second) | Burst |\n| ---- | ---- | ---- |\n|Default| 0.0055 | 20 |\n|Selling partner specific| Variable | Variable |\n\nThe x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns buyer information in the order items of the order indicated by the specified order ID.<br /><br />**Usage Plans:**<br /><br />| Plan type | Rate (requests per second) | Burst |<br />| ---- | ---- | ---- |<br />|Default| 0.0055 | 20 |<br />|Selling partner specific| Variable | Variable |<br /><br />The x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getOrderItemsBuyerInfo",
         "parameters": [
           {
@@ -1805,7 +1805,7 @@
         },
         "LastUpdateDate": {
           "type": "string",
-          "description": "The date when the order was last updated.\n\nNote: LastUpdateDate is returned with an incorrect date for orders that were last updated before 2009-04-01."
+          "description": "The date when the order was last updated.<br /><br />Note: LastUpdateDate is returned with an incorrect date for orders that were last updated before 2009-04-01."
         },
         "OrderStatus": {
           "type": "string",
@@ -1898,7 +1898,7 @@
           "description": "The number of items unshipped."
         },
         "PaymentExecutionDetail": {
-          "description": "Information about sub-payment methods for a Cash On Delivery (COD) order.\n\nNote: For a COD order that is paid for using one sub-payment method, one PaymentExecutionDetailItem object is returned, with PaymentExecutionDetailItem/PaymentMethod = COD. For a COD order that is paid for using multiple sub-payment methods, two or more PaymentExecutionDetailItem objects are returned.",
+          "description": "Information about sub-payment methods for a Cash On Delivery (COD) order.<br /><br />Note: For a COD order that is paid for using one sub-payment method, one PaymentExecutionDetailItem object is returned, with PaymentExecutionDetailItem/PaymentMethod = COD. For a COD order that is paid for using multiple sub-payment methods, two or more PaymentExecutionDetailItem objects are returned.",
           "$ref": "#/definitions/PaymentExecutionDetailItemList"
         },
         "PaymentMethod": {
@@ -1934,11 +1934,11 @@
         },
         "ShipmentServiceLevelCategory": {
           "type": "string",
-          "description": "The shipment service level category of the order.\n\nPossible values: Expedited, FreeEconomy, NextDay, SameDay, SecondDay, Scheduled, Standard."
+          "description": "The shipment service level category of the order.<br /><br />Possible values: Expedited, FreeEconomy, NextDay, SameDay, SecondDay, Scheduled, Standard."
         },
         "EasyShipShipmentStatus": {
           "type": "string",
-          "description": "The status of the Amazon Easy Ship order. This property is included only for Amazon Easy Ship orders.\n\nPossible values: PendingPickUp, LabelCanceled, PickedUp, OutForDelivery, Damaged, Delivered, RejectedByBuyer, Undeliverable, ReturnedToSeller, ReturningToSeller."
+          "description": "The status of the Amazon Easy Ship order. This property is included only for Amazon Easy Ship orders.<br /><br />Possible values: PendingPickUp, LabelCanceled, PickedUp, OutForDelivery, Damaged, Delivered, RejectedByBuyer, Undeliverable, ReturnedToSeller, ReturningToSeller."
         },
         "CbaDisplayableShippingLabel": {
           "type": "string",
@@ -1979,11 +1979,11 @@
         },
         "EarliestShipDate": {
           "type": "string",
-          "description": "The start of the time period within which you have committed to ship the order. In ISO 8601 date time format. Returned only for seller-fulfilled orders.\n\nNote: EarliestShipDate might not be returned for orders placed before February 1, 2013."
+          "description": "The start of the time period within which you have committed to ship the order. In ISO 8601 date time format. Returned only for seller-fulfilled orders.<br /><br />Note: EarliestShipDate might not be returned for orders placed before February 1, 2013."
         },
         "LatestShipDate": {
           "type": "string",
-          "description": "The end of the time period within which you have committed to ship the order. In ISO 8601 date time format. Returned only for seller-fulfilled orders.\n\nNote: LatestShipDate might not be returned for orders placed before February 1, 2013."
+          "description": "The end of the time period within which you have committed to ship the order. In ISO 8601 date time format. Returned only for seller-fulfilled orders.<br /><br />Note: LatestShipDate might not be returned for orders placed before February 1, 2013."
         },
         "EarliestDeliveryDate": {
           "type": "string",
@@ -2208,7 +2208,7 @@
         },
         "PaymentMethod": {
           "type": "string",
-          "description": "A sub-payment method for a COD order.\n\nPossible values:\n\n* COD - Cash On Delivery.\n\n* GC - Gift Card.\n\n* PointsAccount - Amazon Points."
+          "description": "A sub-payment method for a COD order.<br /><br />Possible values:<br /><br />* COD - Cash On Delivery.<br /><br />* GC - Gift Card.<br /><br />* PointsAccount - Amazon Points."
         }
       },
       "description": "Information about a sub-payment method used to pay for a COD order."
@@ -2369,11 +2369,11 @@
         },
         "ConditionId": {
           "type": "string",
-          "description": "The condition of the item.\n\nPossible values: New, Used, Collectible, Refurbished, Preorder, Club."
+          "description": "The condition of the item.<br /><br />Possible values: New, Used, Collectible, Refurbished, Preorder, Club."
         },
         "ConditionSubtypeId": {
           "type": "string",
-          "description": "The subcondition of the item.\n\nPossible values: New, Mint, Very Good, Good, Acceptable, Poor, Club, OEM, Warranty, Refurbished Warranty, Refurbished, Open Box, Any, Other."
+          "description": "The subcondition of the item.<br /><br />Possible values: New, Mint, Very Good, Good, Acceptable, Poor, Club, OEM, Warranty, Refurbished Warranty, Refurbished, Open Box, Any, Other."
         },
         "ScheduledDeliveryStartDate": {
           "type": "string",
@@ -2385,7 +2385,7 @@
         },
         "PriceDesignation": {
           "type": "string",
-          "description": "Indicates that the selling price is a special price that is available only for Amazon Business orders. For more information about the Amazon Business Seller Program, see the [Amazon Business website](https://www.amazon.com/b2b/info/amazon-business). \n\nPossible values: BusinessPrice - A special price that is available only for Amazon Business orders."
+          "description": "Indicates that the selling price is a special price that is available only for Amazon Business orders. For more information about the Amazon Business Seller Program, see the [Amazon Business website](https://www.amazon.com/b2b/info/amazon-business). <br /><br />Possible values: BusinessPrice - A special price that is available only for Amazon Business orders."
         },
         "TaxCollection": {
           "description": "Information about withheld taxes.",
@@ -2393,7 +2393,7 @@
         },
         "SerialNumberRequired": {
           "type": "boolean",
-          "description": "When true, the product type for this item has a serial number.\n\nReturned only for Amazon Easy Ship orders."
+          "description": "When true, the product type for this item has a serial number.<br /><br />Returned only for Amazon Easy Ship orders."
         },
         "IsTransparency": {
           "type": "boolean",

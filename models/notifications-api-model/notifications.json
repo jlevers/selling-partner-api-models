@@ -334,7 +334,7 @@
     "NotificationType": {
       "name": "notificationType",
       "in": "path",
-      "description": "The type of notification to which you want to subscribe.\n\n For more information about notification types, see the Notifications API Use Case Guide.",
+      "description": "The type of notification to which you want to subscribe.<br /><br /> For more information about notification types, see the Notifications API Use Case Guide.",
       "required": true,
       "type": "string",
       "enum": [
@@ -352,7 +352,7 @@
       "x-docgen-enum-table-extension": [
         {
           "value": "ANY_OFFER_CHANGED",
-          "description": "Sent whenever there is a listing change for any of the top 20 offers, by condition (new or used), or if the external price (the price from other retailers) changes for an item listed by the seller. The top 20 offers are determined by the landed price, which is the price plus shipping minus Amazon Points. If multiple sellers are charging the same landed price, the results will be returned in random order.\n\n These notifications are only sent for items for which the seller has active offers. You cannot subscribe to notifications for items for which the seller does not have active offers."
+          "description": "Sent whenever there is a listing change for any of the top 20 offers, by condition (new or used), or if the external price (the price from other retailers) changes for an item listed by the seller. The top 20 offers are determined by the landed price, which is the price plus shipping minus Amazon Points. If multiple sellers are charging the same landed price, the results will be returned in random order.<br /><br /> These notifications are only sent for items for which the seller has active offers. You cannot subscribe to notifications for items for which the seller does not have active offers."
         },
         {
           "value": "FEED_PROCESSING_FINISHED",
@@ -368,7 +368,7 @@
         },
         {
           "value": "FULFILLMENT_ORDER_STATUS",
-          "description": "Sent whenever there is a change in the status of a Multi-Channel Fulfillment order.\n\n Multi-Channel Fulfillment is a program where sellers use their FBA inventory to fulfill orders not sold on the retail site."
+          "description": "Sent whenever there is a change in the status of a Multi-Channel Fulfillment order.<br /><br /> Multi-Channel Fulfillment is a program where sellers use their FBA inventory to fulfill orders not sold on the retail site."
         },
         {
           "value": "REPORT_PROCESSING_FINISHED",
@@ -388,7 +388,7 @@
         },
         {
           "value": "B2B_ANY_OFFER_CHANGED",
-          "description": "Sent whenever there is a B2B offer change for any of the top 20 offers, in the form of any price change (either single unit or quantity discount tier prices) for an item listed by the seller. The top 20 B2B offers are determined by the single-unit landed price, which is the price plus shipping. If multiple sellers are charging the same landed price, the results will be returned in random order.\nThese notifications are only sent for items for which the seller has active offers. You cannot subscribe to notifications for items for which the seller does not have active offers."
+          "description": "Sent whenever there is a B2B offer change for any of the top 20 offers, in the form of any price change (either single unit or quantity discount tier prices) for an item listed by the seller. The top 20 B2B offers are determined by the single-unit landed price, which is the price plus shipping. If multiple sellers are charging the same landed price, the results will be returned in random order.<br />These notifications are only sent for items for which the seller has active offers. You cannot subscribe to notifications for items for which the seller does not have active offers."
         }
       ]
     }
@@ -399,7 +399,7 @@
         "tags":[
           "notifications"
         ],
-        "description":"Creates a subscription for the specified notification type to be delivered to the specified destination. Before you can subscribe, you must first create the destination by calling the createDestination operation.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 5 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description":"Creates a subscription for the specified notification type to be delivered to the specified destination. Before you can subscribe, you must first create the destination by calling the createDestination operation.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 5 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId":"createSubscription",
         "parameters":[
           {
@@ -564,7 +564,7 @@
         "tags":[
           "notifications"
         ],
-        "description":"Returns information about subscriptions of the specified notification type. You can use this API to get subscription information when you do not have a subscription identifier.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 5 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description":"Returns information about subscriptions of the specified notification type. You can use this API to get subscription information when you do not have a subscription identifier.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 5 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId":"getSubscription",
         "parameters":[
           {
@@ -715,7 +715,7 @@
         "tags":[
           "notifications"
         ],
-        "description":"Deletes the subscription indicated by the subscription identifier and notification type that you specify. The subscription identifier can be for any subscription associated with your application. After you successfully call this operation, notifications will stop being sent for the associated subscription. The deleteSubscriptionById API is grantless. For more information, see \"Grantless operations\" in the Selling Partner API Developer Guide.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 5 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description":"Deletes the subscription indicated by the subscription identifier and notification type that you specify. The subscription identifier can be for any subscription associated with your application. After you successfully call this operation, notifications will stop being sent for the associated subscription. The deleteSubscriptionById API is grantless. For more information, see \"Grantless operations\" in the Selling Partner API Developer Guide.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 5 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId":"deleteSubscriptionById",
         "parameters":[
           {
@@ -873,7 +873,7 @@
         "tags":[
           "notifications"
         ],
-        "description":"Returns information about a subscription for the specified notification type. The getSubscriptionById API is grantless. For more information, see \"Grantless operations\" in the Selling Partner API Developer Guide.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 5 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description":"Returns information about a subscription for the specified notification type. The getSubscriptionById API is grantless. For more information, see \"Grantless operations\" in the Selling Partner API Developer Guide.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 5 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId":"getSubscriptionById",
         "parameters":[
           {
@@ -1043,7 +1043,7 @@
         "tags":[
           "notifications"
         ],
-        "description":"Creates a destination resource to receive notifications. The createDestination API is grantless. For more information, see \"Grantless operations\" in the Selling Partner API Developer Guide.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 5 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description":"Creates a destination resource to receive notifications. The createDestination API is grantless. For more information, see \"Grantless operations\" in the Selling Partner API Developer Guide.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 5 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId":"createDestination",
         "parameters":[
           {
@@ -1217,7 +1217,7 @@
         "tags":[
           "notifications"
         ],
-        "description":"Returns information about all destinations. The getDestinations API is grantless. For more information, see \"Grantless operations\" in the Selling Partner API Developer Guide.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 5 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description":"Returns information about all destinations. The getDestinations API is grantless. For more information, see \"Grantless operations\" in the Selling Partner API Developer Guide.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 5 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId":"getDestinations",
         "parameters":[
 
@@ -1389,7 +1389,7 @@
         "tags":[
           "notifications"
         ],
-        "description":"Returns information about the destination that you specify. The getDestination API is grantless. For more information, see \"Grantless operations\" in the Selling Partner API Developer Guide.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 5 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description":"Returns information about the destination that you specify. The getDestination API is grantless. For more information, see \"Grantless operations\" in the Selling Partner API Developer Guide.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 5 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId":"getDestination",
         "parameters":[
           {
@@ -1562,7 +1562,7 @@
         "tags":[
           "notifications"
         ],
-        "description":"Deletes the destination that you specify. The deleteDestination API is grantless. For more information, see \"Grantless operations\" in the Selling Partner API Developer Guide.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 5 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description":"Deletes the destination that you specify. The deleteDestination API is grantless. For more information, see \"Grantless operations\" in the Selling Partner API Developer Guide.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 5 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId":"deleteDestination",
         "parameters":[
           {

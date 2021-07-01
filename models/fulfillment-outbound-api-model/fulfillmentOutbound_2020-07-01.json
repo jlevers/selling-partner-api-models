@@ -30,7 +30,7 @@
         "tags": [
           "fbaOutbound"
         ],
-        "description": "Returns a list of fulfillment order previews based on shipping criteria that you specify.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 2 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns a list of fulfillment order previews based on shipping criteria that you specify.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 2 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getFulfillmentPreview",
         "parameters": [
           {
@@ -365,7 +365,7 @@
         "tags": [
           "fbaOutbound"
         ],
-        "description": "Returns a list of fulfillment orders fulfilled after (or at) a specified date-time, or indicated by the next token parameter.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 2 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns a list of fulfillment orders fulfilled after (or at) a specified date-time, or indicated by the next token parameter.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 2 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "listAllFulfillmentOrders",
         "parameters": [
           {
@@ -979,7 +979,7 @@
         "tags": [
           "fbaOutbound"
         ],
-        "description": "Requests that Amazon ship items from the seller's inventory in Amazon's fulfillment network to a destination address.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 2 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Requests that Amazon ship items from the seller's inventory in Amazon's fulfillment network to a destination address.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 2 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "createFulfillmentOrder",
         "parameters": [
           {
@@ -1330,7 +1330,7 @@
         "tags": [
           "fbaOutbound"
         ],
-        "description": "Returns delivery tracking information for a package in an outbound shipment for a Multi-Channel Fulfillment order.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 2 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns delivery tracking information for a package in an outbound shipment for a Multi-Channel Fulfillment order.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 2 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getPackageTrackingDetails",
         "parameters": [
           {
@@ -1583,7 +1583,7 @@
         "tags": [
           "fbaOutbound"
         ],
-        "description": "Returns a list of return reason codes for a seller SKU in a given marketplace.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 2 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns a list of return reason codes for a seller SKU in a given marketplace.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 2 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "listReturnReasonCodes",
         "parameters": [
           {
@@ -1890,7 +1890,7 @@
         "tags": [
           "fbaOutbound"
         ],
-        "description": "Creates a fulfillment return. \n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 2 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Creates a fulfillment return. <br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 2 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "createFulfillmentReturn",
         "parameters": [
           {
@@ -2170,7 +2170,7 @@
         "tags": [
           "fbaOutbound"
         ],
-        "description": "Returns the fulfillment order indicated by the specified order identifier.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 2 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns the fulfillment order indicated by the specified order identifier.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 2 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getFulfillmentOrder",
         "parameters": [
           {
@@ -2523,7 +2523,7 @@
         "tags": [
           "fbaOutbound"
         ],
-        "description": "Updates and/or requests shipment for a fulfillment order with an order hold on it.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 2 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Updates and/or requests shipment for a fulfillment order with an order hold on it.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 2 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "updateFulfillmentOrder",
         "parameters": [
           {
@@ -2642,7 +2642,7 @@
                   "errors": [
                     {
                       "code": "InvalidInput",
-                      "message": "Value OrderNotUpdatable for parameter  is invalid. Reason: 1 error:\nThis order is not updatable. Items in the order are already in working or completed shipments. \n.",
+                      "message": "Value OrderNotUpdatable for parameter  is invalid. Reason: 1 error:<br />This order is not updatable. Items in the order are already in working or completed shipments. <br />.",
                       "details": ""
                     }
                   ]
@@ -2750,7 +2750,7 @@
         "tags": [
           "fbaOutbound"
         ],
-        "description": "Requests that Amazon stop attempting to fulfill the fulfillment order indicated by the specified order identifier.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 2 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Requests that Amazon stop attempting to fulfill the fulfillment order indicated by the specified order identifier.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 2 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "cancelFulfillmentOrder",
         "parameters": [
           {
@@ -2927,7 +2927,7 @@
         "tags": [
           "fbaOutbound"
         ],
-        "description": "Returns a list of features available for Multi-Channel Fulfillment orders in the marketplace you specify, and whether the seller for which you made the call is enrolled for each feature.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 2 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns a list of features available for Multi-Channel Fulfillment orders in the marketplace you specify, and whether the seller for which you made the call is enrolled for each feature.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 2 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getFeatures",
         "parameters": [
           {
@@ -3131,7 +3131,7 @@
         "tags": [
           "fbaOutbound"
         ],
-        "description": "Returns a list of inventory items that are eligible for the fulfillment feature you specify.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 2 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns a list of inventory items that are eligible for the fulfillment feature you specify.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 2 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getFeatureInventory",
         "parameters": [
           {
@@ -3381,7 +3381,7 @@
         "tags": [
           "fbaOutbound"
         ],
-        "description": "Returns the number of items with the sellerSKU you specify that can have orders fulfilled using the specified feature. Note that if the sellerSKU isn't eligible, the response will contain an empty skuInfo object.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 2 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns the number of items with the sellerSKU you specify that can have orders fulfilled using the specified feature. Note that if the sellerSKU isn't eligible, the response will contain an empty skuInfo object.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 2 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getFeatureSKU",
         "parameters": [
           {
@@ -3887,7 +3887,7 @@
         },
         "displayableOrderId": {
           "type": "string",
-          "description": "A fulfillment order identifier that the seller creates. This value displays as the order identifier in recipient-facing materials such as the outbound shipment packing slip. The value of DisplayableOrderId should match the order identifier that the seller provides to the recipient. The seller can use the SellerFulfillmentOrderId for this value or they can specify an alternate value if they want the recipient to reference an alternate order identifier.\n\nThe value must be an alpha-numeric or ISO 8859-1 compliant string from one to 40 characters in length. Cannot contain two spaces in a row. Leading and trailing white space is removed.",
+          "description": "A fulfillment order identifier that the seller creates. This value displays as the order identifier in recipient-facing materials such as the outbound shipment packing slip. The value of DisplayableOrderId should match the order identifier that the seller provides to the recipient. The seller can use the SellerFulfillmentOrderId for this value or they can specify an alternate value if they want the recipient to reference an alternate order identifier.<br /><br />The value must be an alpha-numeric or ISO 8859-1 compliant string from one to 40 characters in length. Cannot contain two spaces in a row. Leading and trailing white space is removed.",
           "maxLength": 40
         },
         "displayableOrderDate": {
@@ -4325,7 +4325,7 @@
           "$ref": "#/definitions/UnfulfillablePreviewItemList"
         },
         "orderUnfulfillableReasons": {
-          "description": "Error codes associated with the fulfillment order preview that indicate why the order is not fulfillable.\n\nError code examples:\n\nDeliverySLAUnavailable\nInvalidDestinationAddress",
+          "description": "Error codes associated with the fulfillment order preview that indicate why the order is not fulfillable.<br /><br />Error code examples:<br /><br />DeliverySLAUnavailable<br />InvalidDestinationAddress",
           "$ref": "#/definitions/StringList"
         },
         "marketplaceId": {
@@ -4508,7 +4508,7 @@
           ]
         },
         "shippingDate": {
-          "description": "The meaning of the shippingDate value depends on the current status of the shipment. If the current value of FulfillmentShipmentStatus is:\n\n* Pending - shippingDate represents the estimated time that the shipment will leave the Amazon fulfillment center.\n\n* Shipped - shippingDate represents the date that the shipment left the Amazon fulfillment center.\nIf a shipment includes more than one package, shippingDate applies to all of the packages in the shipment. If the value of FulfillmentShipmentStatus is CancelledByFulfiller or CancelledBySeller, shippingDate is not returned. The value must be in ISO 8601 date time format.",
+          "description": "The meaning of the shippingDate value depends on the current status of the shipment. If the current value of FulfillmentShipmentStatus is:<br /><br />* Pending - shippingDate represents the estimated time that the shipment will leave the Amazon fulfillment center.<br /><br />* Shipped - shippingDate represents the date that the shipment left the Amazon fulfillment center.<br />If a shipment includes more than one package, shippingDate applies to all of the packages in the shipment. If the value of FulfillmentShipmentStatus is CancelledByFulfiller or CancelledBySeller, shippingDate is not returned. The value must be in ISO 8601 date time format.",
           "$ref": "#/definitions/Timestamp"
         },
         "estimatedArrivalDate": {
@@ -4705,12 +4705,12 @@
           "$ref": "#/definitions/GetFulfillmentPreviewItemList"
         },
         "shippingSpeedCategories": {
-          "description": "A list of shipping methods used for creating fulfillment order previews.\n\nPossible values:\n\n* Standard - Standard shipping method.\n* Expedited - Expedited shipping method.\n* Priority - Priority shipping method.\n* ScheduledDelivery - Scheduled Delivery shipping method.\nNote: Shipping method service level agreements vary by marketplace. Sellers should see the Seller Central website in their marketplace for shipping method service level agreements and fulfillment fees.",
+          "description": "A list of shipping methods used for creating fulfillment order previews.<br /><br />Possible values:<br /><br />* Standard - Standard shipping method.<br />* Expedited - Expedited shipping method.<br />* Priority - Priority shipping method.<br />* ScheduledDelivery - Scheduled Delivery shipping method.<br />Note: Shipping method service level agreements vary by marketplace. Sellers should see the Seller Central website in their marketplace for shipping method service level agreements and fulfillment fees.",
           "$ref": "#/definitions/ShippingSpeedCategoryList"
         },
         "includeCODFulfillmentPreview": {
           "type": "boolean",
-          "description": "Specifies whether to return fulfillment order previews that are for COD (Cash On Delivery).\n\nPossible values:\n\n* true - Returns all fulfillment order previews (both for COD and not for COD).\n* false - Returns only fulfillment order previews that are not for COD."
+          "description": "Specifies whether to return fulfillment order previews that are for COD (Cash On Delivery).<br /><br />Possible values:<br /><br />* true - Returns all fulfillment order previews (both for COD and not for COD).<br />* false - Returns only fulfillment order previews that are not for COD."
         },
         "includeDeliveryWindows": {
           "type": "boolean",
@@ -5980,7 +5980,7 @@
         },
         "ineligibleReasons": {
           "type": "array",
-          "description": "A list of one or more reasons that the seller SKU is ineligibile for the feature.\n\nPossible values:\n* MERCHANT_NOT_ENROLLED - The merchant isn't enrolled for the feature.\n* SKU_NOT_ELIGIBLE - The SKU doesn't reside in a warehouse that supports the feature.\n* INVALID_SKU - There is an issue with the SKU provided.",
+          "description": "A list of one or more reasons that the seller SKU is ineligibile for the feature.<br /><br />Possible values:<br />* MERCHANT_NOT_ENROLLED - The merchant isn't enrolled for the feature.<br />* SKU_NOT_ELIGIBLE - The SKU doesn't reside in a warehouse that supports the feature.<br />* INVALID_SKU - There is an issue with the SKU provided.",
           "items": {
             "type": "string"
           }

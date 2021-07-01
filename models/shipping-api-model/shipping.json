@@ -1092,7 +1092,7 @@
     "/shipping/v1/shipments": {
       "post": {
         "tags": ["shipping"],
-        "description": "Create a new shipment.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 5 | 15 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Create a new shipment.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 5 | 15 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "createShipment",
         "responses": {
           "200": {
@@ -1421,7 +1421,7 @@
     "/shipping/v1/shipments/{shipmentId}": {
       "get": {
         "tags": ["shipping"],
-        "description": "Return the entire shipment object for the shipmentId.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 5 | 15 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Return the entire shipment object for the shipmentId.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 5 | 15 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getShipment",
         "responses": {
           "200": {
@@ -1808,7 +1808,7 @@
     "/shipping/v1/shipments/{shipmentId}/cancel": {
       "post": {
         "tags": ["shipping"],
-        "description": "Cancel a shipment by the given shipmentId.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 5 | 15 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Cancel a shipment by the given shipmentId.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 5 | 15 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "cancelShipment",
         "responses": {
           "200": {
@@ -2066,7 +2066,7 @@
     "/shipping/v1/shipments/{shipmentId}/purchaseLabels": {
       "post": {
         "tags": ["shipping"],
-        "description": "Purchase shipping labels based on a given rate.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 5 | 15 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Purchase shipping labels based on a given rate.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 5 | 15 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "purchaseLabels",
         "responses": {
           "200": {
@@ -2409,7 +2409,7 @@
     "/shipping/v1/shipments/{shipmentId}/containers/{trackingId}/label": {
       "post": {
         "tags": ["shipping"],
-        "description": "Retrieve shipping label based on the shipment id and tracking id.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 5 | 15 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Retrieve shipping label based on the shipment id and tracking id.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 5 | 15 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "retrieveShippingLabel",
         "responses": {
           "200": {
@@ -2698,7 +2698,7 @@
         "tags": [
           "shipping"
         ],
-        "description": "Purchase shipping labels.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 5 | 15 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Purchase shipping labels.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 5 | 15 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "purchaseShipment",
         "responses": {
           "200": {
@@ -2906,7 +2906,7 @@
         "tags": [
           "shipping"
         ],
-        "description": "Get service rates.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 5 | 15 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Get service rates.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 5 | 15 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getRates",
         "responses": {
           "200": {
@@ -3082,7 +3082,7 @@
     "/shipping/v1/account": {
       "get": {
         "tags": ["shipping"],
-        "description": "Verify if the current account is valid.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 5 | 15 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Verify if the current account is valid.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 5 | 15 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getAccount",
         "responses": {
           "200": {
@@ -3204,7 +3204,7 @@
     "/shipping/v1/tracking/{trackingId}": {
       "get": {
         "tags": ["shipping"],
-        "description": "Return the tracking information of a shipment.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Return the tracking information of a shipment.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 1 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getTrackingInformation",
         "responses": {
           "200": {

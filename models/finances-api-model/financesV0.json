@@ -30,7 +30,7 @@
         "tags": [
           "finances"
         ],
-        "description": "Returns financial event groups for a given date range.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 0.5 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns financial event groups for a given date range.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 0.5 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "listFinancialEventGroups",
         "parameters": [
           {
@@ -215,7 +215,7 @@
         "tags": [
           "finances"
         ],
-        "description": "Returns all financial events for the specified financial event group.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 0.5 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns all financial events for the specified financial event group.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 0.5 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "listFinancialEventsByGroupId",
         "parameters": [
           {
@@ -671,7 +671,7 @@
         "tags": [
           "finances"
         ],
-        "description": "Returns all financial events for the specified order.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 0.5 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns all financial events for the specified order.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 0.5 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "listFinancialEventsByOrderId",
         "parameters": [
           {
@@ -939,7 +939,7 @@
         "tags": [
           "finances"
         ],
-        "description": "Returns financial events for the specified data range.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 0.5 | 30 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns financial events for the specified data range.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 0.5 | 30 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "listFinancialEvents",
         "parameters": [
           {
@@ -1214,7 +1214,7 @@
       "type": "object",
       "properties": {
         "AdjustmentType": {
-          "description": "The type of adjustment.\n\nPossible values:\n\n* FBAInventoryReimbursement - An FBA inventory reimbursement to a seller's account. This occurs if a seller's inventory is damaged.\n\n* ReserveEvent - A reserve event that is generated at the time of a settlement period closing. This occurs when some money from a seller's account is held back.\n\n* PostageBilling - The amount paid by a seller for shipping labels.\n\n* PostageRefund - The reimbursement of shipping labels purchased for orders that were canceled or refunded.\n\n* LostOrDamagedReimbursement - An Amazon Easy Ship reimbursement to a seller's account for a package that we lost or damaged.\n\n* CanceledButPickedUpReimbursement - An Amazon Easy Ship reimbursement to a seller's account. This occurs when a package is picked up and the order is subsequently canceled. This value is used only in the India marketplace.\n\n* ReimbursementClawback - An Amazon Easy Ship reimbursement clawback from a seller's account. This occurs when a prior reimbursement is reversed. This value is used only in the India marketplace.\n\n* SellerRewards - An award credited to a seller's account for their participation in an offer in the Seller Rewards program. Applies only to the India marketplace.",
+          "description": "The type of adjustment.<br /><br />Possible values:<br /><br />* FBAInventoryReimbursement - An FBA inventory reimbursement to a seller's account. This occurs if a seller's inventory is damaged.<br /><br />* ReserveEvent - A reserve event that is generated at the time of a settlement period closing. This occurs when some money from a seller's account is held back.<br /><br />* PostageBilling - The amount paid by a seller for shipping labels.<br /><br />* PostageRefund - The reimbursement of shipping labels purchased for orders that were canceled or refunded.<br /><br />* LostOrDamagedReimbursement - An Amazon Easy Ship reimbursement to a seller's account for a package that we lost or damaged.<br /><br />* CanceledButPickedUpReimbursement - An Amazon Easy Ship reimbursement to a seller's account. This occurs when a package is picked up and the order is subsequently canceled. This value is used only in the India marketplace.<br /><br />* ReimbursementClawback - An Amazon Easy Ship reimbursement clawback from a seller's account. This occurs when a prior reimbursement is reversed. This value is used only in the India marketplace.<br /><br />* SellerRewards - An award credited to a seller's account for their participation in an offer in the Seller Rewards program. Applies only to the India marketplace.",
           "type": "string"
         },
         "PostedDate": {
@@ -1301,7 +1301,7 @@
           "type": "string"
         },
         "TransactionType": {
-          "description": "Indicates the type of transaction. \n\nPossible values:\n\n* Charge - For an affordability promotion expense.\n\n* Refund - For an affordability promotion expense reversal.",
+          "description": "Indicates the type of transaction. <br /><br />Possible values:<br /><br />* Charge - For an affordability promotion expense.<br /><br />* Refund - For an affordability promotion expense reversal.",
           "type": "string"
         },
         "BaseExpense": {
@@ -1337,7 +1337,7 @@
       "type": "number"
     },
     "ChargeComponent": {
-      "description": "A charge on the seller's account.\n\nPossible values:\n\n* Principal - The selling price of the order item, equal to the selling price of the item multiplied by the quantity ordered.\n\n* Tax - The tax collected by the seller on the Principal.\n\n* MarketplaceFacilitatorTax-Principal - The tax withheld on the Principal.\n\n* MarketplaceFacilitatorTax-Shipping - The tax withheld on the ShippingCharge.\n\n* MarketplaceFacilitatorTax-Giftwrap - The tax withheld on the Giftwrap charge.\n\n* MarketplaceFacilitatorTax-Other - The tax withheld on other miscellaneous charges.\n\n* Discount - The promotional discount for an order item.\n\n* TaxDiscount - The tax amount deducted for promotional rebates.\n\n* CODItemCharge - The COD charge for an order item.\n\n* CODItemTaxCharge - The tax collected by the seller on a CODItemCharge.\n\n* CODOrderCharge - The COD charge for an order.\n\n* CODOrderTaxCharge - The tax collected by the seller on a CODOrderCharge.\n\n* CODShippingCharge - Shipping charges for a COD order.\n\n* CODShippingTaxCharge - The tax collected by the seller on a CODShippingCharge.\n\n* ShippingCharge - The shipping charge.\n\n* ShippingTax - The tax collected by the seller on a ShippingCharge.\n\n* Goodwill - The amount given to a buyer as a gesture of goodwill or to compensate for pain and suffering in the buying experience.\n\n* Giftwrap - The gift wrap charge.\n\n* GiftwrapTax - The tax collected by the seller on a Giftwrap charge.\n\n* RestockingFee - The charge applied to the buyer when returning a product in certain categories.\n\n* ReturnShipping - The amount given to the buyer to compensate for shipping the item back in the event we are at fault.\n\n* PointsFee - The value of Amazon Points deducted from the refund if the buyer does not have enough Amazon Points to cover the deduction.\n\n* GenericDeduction - A generic bad debt deduction.\n\n* FreeReplacementReturnShipping - The compensation for return shipping when a buyer receives the wrong item, requests a free replacement, and returns the incorrect item.\n\n* PaymentMethodFee - The fee collected for certain payment methods in certain marketplaces.\n\n* ExportCharge - The export duty that is charged when an item is shipped to an international destination as part of the Amazon Global program.\n\n* SAFE-TReimbursement - The SAFE-T claim amount for the item.\n\n* TCS-CGST - Tax Collected at Source (TCS) for Central Goods and Services Tax (CGST).\n\n* TCS-SGST - Tax Collected at Source for State Goods and Services Tax (SGST).\n\n* TCS-IGST - Tax Collected at Source for Integrated Goods and Services Tax (IGST).\n\n* TCS-UTGST - Tax Collected at Source for Union Territories Goods and Services Tax (UTGST).",
+      "description": "A charge on the seller's account.<br /><br />Possible values:<br /><br />* Principal - The selling price of the order item, equal to the selling price of the item multiplied by the quantity ordered.<br /><br />* Tax - The tax collected by the seller on the Principal.<br /><br />* MarketplaceFacilitatorTax-Principal - The tax withheld on the Principal.<br /><br />* MarketplaceFacilitatorTax-Shipping - The tax withheld on the ShippingCharge.<br /><br />* MarketplaceFacilitatorTax-Giftwrap - The tax withheld on the Giftwrap charge.<br /><br />* MarketplaceFacilitatorTax-Other - The tax withheld on other miscellaneous charges.<br /><br />* Discount - The promotional discount for an order item.<br /><br />* TaxDiscount - The tax amount deducted for promotional rebates.<br /><br />* CODItemCharge - The COD charge for an order item.<br /><br />* CODItemTaxCharge - The tax collected by the seller on a CODItemCharge.<br /><br />* CODOrderCharge - The COD charge for an order.<br /><br />* CODOrderTaxCharge - The tax collected by the seller on a CODOrderCharge.<br /><br />* CODShippingCharge - Shipping charges for a COD order.<br /><br />* CODShippingTaxCharge - The tax collected by the seller on a CODShippingCharge.<br /><br />* ShippingCharge - The shipping charge.<br /><br />* ShippingTax - The tax collected by the seller on a ShippingCharge.<br /><br />* Goodwill - The amount given to a buyer as a gesture of goodwill or to compensate for pain and suffering in the buying experience.<br /><br />* Giftwrap - The gift wrap charge.<br /><br />* GiftwrapTax - The tax collected by the seller on a Giftwrap charge.<br /><br />* RestockingFee - The charge applied to the buyer when returning a product in certain categories.<br /><br />* ReturnShipping - The amount given to the buyer to compensate for shipping the item back in the event we are at fault.<br /><br />* PointsFee - The value of Amazon Points deducted from the refund if the buyer does not have enough Amazon Points to cover the deduction.<br /><br />* GenericDeduction - A generic bad debt deduction.<br /><br />* FreeReplacementReturnShipping - The compensation for return shipping when a buyer receives the wrong item, requests a free replacement, and returns the incorrect item.<br /><br />* PaymentMethodFee - The fee collected for certain payment methods in certain marketplaces.<br /><br />* ExportCharge - The export duty that is charged when an item is shipped to an international destination as part of the Amazon Global program.<br /><br />* SAFE-TReimbursement - The SAFE-T claim amount for the item.<br /><br />* TCS-CGST - Tax Collected at Source (TCS) for Central Goods and Services Tax (CGST).<br /><br />* TCS-SGST - Tax Collected at Source for State Goods and Services Tax (SGST).<br /><br />* TCS-IGST - Tax Collected at Source for Integrated Goods and Services Tax (IGST).<br /><br />* TCS-UTGST - Tax Collected at Source for Union Territories Goods and Services Tax (UTGST).",
       "type": "object",
       "properties": {
         "ChargeType": {
@@ -1449,7 +1449,7 @@
       "type": "object",
       "properties": {
         "DebtRecoveryType": {
-          "description": "The debt recovery type.\n\nPossible values:\n\n* DebtPayment\n\n* DebtPaymentFailure\n\n*DebtAdjustment",
+          "description": "The debt recovery type.<br /><br />Possible values:<br /><br />* DebtPayment<br /><br />* DebtPaymentFailure<br /><br />*DebtAdjustment",
           "type": "string"
         },
         "RecoveryAmount": {
@@ -1509,7 +1509,7 @@
       "type": "object",
       "properties": {
         "DirectPaymentType": {
-          "description": "The type of payment.\n\nPossible values:\n\n* StoredValueCardRevenue - The amount that is deducted from the seller's account because the seller received money through a stored value card.\n\n* StoredValueCardRefund - The amount that Amazon returns to the seller if the order that is bought using a stored value card is refunded.\n\n* PrivateLabelCreditCardRevenue - The amount that is deducted from the seller's account because the seller received money through a private label credit card offered by Amazon.\n\n* PrivateLabelCreditCardRefund - The amount that Amazon returns to the seller if the order that is bought using a private label credit card offered by Amazon is refunded.\n\n* CollectOnDeliveryRevenue - The COD amount that the seller collected directly from the buyer.\n\n* CollectOnDeliveryRefund - The amount that Amazon refunds to the buyer if an order paid for by COD is refunded.",
+          "description": "The type of payment.<br /><br />Possible values:<br /><br />* StoredValueCardRevenue - The amount that is deducted from the seller's account because the seller received money through a stored value card.<br /><br />* StoredValueCardRefund - The amount that Amazon returns to the seller if the order that is bought using a stored value card is refunded.<br /><br />* PrivateLabelCreditCardRevenue - The amount that is deducted from the seller's account because the seller received money through a private label credit card offered by Amazon.<br /><br />* PrivateLabelCreditCardRefund - The amount that Amazon returns to the seller if the order that is bought using a private label credit card offered by Amazon is refunded.<br /><br />* CollectOnDeliveryRevenue - The COD amount that the seller collected directly from the buyer.<br /><br />* CollectOnDeliveryRefund - The amount that Amazon refunds to the buyer if an order paid for by COD is refunded.",
           "type": "string"
         },
         "DirectPaymentAmount": {
@@ -1584,7 +1584,7 @@
           "type": "string"
         },
         "ProcessingStatus": {
-          "description": "The processing status of the financial event group indicates whether the balance of the financial event group is settled.\n\nPossible values:\n\n* Open\n\n* Closed",
+          "description": "The processing status of the financial event group indicates whether the balance of the financial event group is settled.<br /><br />Possible values:<br /><br />* Open<br /><br />* Closed",
           "type": "string"
         },
         "FundTransferStatus": {
@@ -1800,7 +1800,7 @@
           "$ref": "#/definitions/Currency"
         },
         "SourceBusinessEventType": {
-          "description": "The type of event.\n\nPossible values:\n\n* LoanAdvance\n\n* LoanPayment\n\n* LoanRefund",
+          "description": "The type of event.<br /><br />Possible values:<br /><br />* LoanAdvance<br /><br />* LoanPayment<br /><br />* LoanRefund",
           "type": "string"
         }
       }
@@ -1817,7 +1817,7 @@
       "type": "object",
       "properties": {
         "TransactionType": {
-          "description": "The type of network item swap.\n\nPossible values:\n\n* NetCo - A Fulfillment by Amazon inventory pooling transaction. Available only in the India marketplace.\n\n* ComminglingVAT - A commingling VAT transaction. Available only in the UK, Spain, France, Germany, and Italy marketplaces.",
+          "description": "The type of network item swap.<br /><br />Possible values:<br /><br />* NetCo - A Fulfillment by Amazon inventory pooling transaction. Available only in the India marketplace.<br /><br />* ComminglingVAT - A commingling VAT transaction. Available only in the UK, Spain, France, Germany, and Italy marketplaces.",
           "type": "string"
         },
         "PostedDate": {
@@ -1886,7 +1886,7 @@
           "$ref": "#/definitions/FeeComponentList"
         },
         "PaymentAmountType": {
-          "description": "The type of payment.\n\nPossible values:\n\n* Sales",
+          "description": "The type of payment.<br /><br />Possible values:<br /><br />* Sales",
           "type": "string"
         },
         "AmountDescription": {
@@ -1894,7 +1894,7 @@
           "type": "string"
         },
         "FulfillmentChannel": {
-          "description": "The fulfillment channel.\n\nPossible values:\n\n* AFN - Amazon Fulfillment Network (Fulfillment by Amazon)\n\n* MFN - Merchant Fulfillment Network (self-fulfilled)",
+          "description": "The fulfillment channel.<br /><br />Possible values:<br /><br />* AFN - Amazon Fulfillment Network (Fulfillment by Amazon)<br /><br />* MFN - Merchant Fulfillment Network (self-fulfilled)",
           "type": "string"
         },
         "StoreName": {
@@ -1919,7 +1919,7 @@
           "$ref": "#/definitions/Date"
         },
         "transactionType": {
-          "description": "Indicates if the transaction is for a charge or a refund.\n\nPossible values:\n\n* charge - Charge\n\n* refund - Refund",
+          "description": "Indicates if the transaction is for a charge or a refund.<br /><br />Possible values:<br /><br />* charge - Charge<br /><br />* refund - Refund",
           "type": "string"
         },
         "invoiceId": {
@@ -1985,7 +1985,7 @@
           "type": "string"
         },
         "TransactionType": {
-          "description": "The type of removal order.\n\nPossible values:\n\n* WHOLESALE_LIQUIDATION",
+          "description": "The type of removal order.<br /><br />Possible values:<br /><br />* WHOLESALE_LIQUIDATION",
           "type": "string"
         },
         "RemovalShipmentItemList": {
@@ -2010,7 +2010,7 @@
           "type": "string"
         },
         "TaxCollectionModel": {
-          "description": "The tax collection model applied to the item.\n\nPossible values:\n\n* MarketplaceFacilitator - Tax is withheld and remitted to the taxing authority by Amazon on behalf of the seller.\n\n* Standard - Tax is paid to the seller and not remitted to the taxing authority by Amazon.",
+          "description": "The tax collection model applied to the item.<br /><br />Possible values:<br /><br />* MarketplaceFacilitator - Tax is withheld and remitted to the taxing authority by Amazon on behalf of the seller.<br /><br />* Standard - Tax is paid to the seller and not remitted to the taxing authority by Amazon.",
           "type": "string"
         },
         "FulfillmentNetworkSKU": {
@@ -2056,7 +2056,7 @@
           "type": "string"
         },
         "RentalEventType": {
-          "description": "The type of rental event.\n\nPossible values:\n\n* RentalCustomerPayment-Buyout - Transaction type that represents when the customer wants to buy out a rented item.\n\n* RentalCustomerPayment-Extension - Transaction type that represents when the customer wants to extend the rental period.\n\n* RentalCustomerRefund-Buyout - Transaction type that represents when the customer requests a refund for the buyout of the rented item.\n\n* RentalCustomerRefund-Extension - Transaction type that represents when the customer requests a refund over the extension on the rented item.\n\n* RentalHandlingFee - Transaction type that represents the fee that Amazon charges sellers who rent through Amazon.\n\n* RentalChargeFailureReimbursement - Transaction type that represents when Amazon sends money to the seller to compensate for a failed charge.\n\n* RentalLostItemReimbursement - Transaction type that represents when Amazon sends money to the seller to compensate for a lost item.",
+          "description": "The type of rental event.<br /><br />Possible values:<br /><br />* RentalCustomerPayment-Buyout - Transaction type that represents when the customer wants to buy out a rented item.<br /><br />* RentalCustomerPayment-Extension - Transaction type that represents when the customer wants to extend the rental period.<br /><br />* RentalCustomerRefund-Buyout - Transaction type that represents when the customer requests a refund for the buyout of the rented item.<br /><br />* RentalCustomerRefund-Extension - Transaction type that represents when the customer requests a refund over the extension on the rented item.<br /><br />* RentalHandlingFee - Transaction type that represents the fee that Amazon charges sellers who rent through Amazon.<br /><br />* RentalChargeFailureReimbursement - Transaction type that represents when Amazon sends money to the seller to compensate for a failed charge.<br /><br />* RentalLostItemReimbursement - Transaction type that represents when Amazon sends money to the seller to compensate for a lost item.",
           "type": "string"
         },
         "ExtensionLength": {
@@ -2106,7 +2106,7 @@
       "type": "object",
       "properties": {
         "RetrochargeEventType": {
-          "description": "The type of event.\n\nPossible values:\n\n* Retrocharge\n\n* RetrochargeReversal",
+          "description": "The type of event.<br /><br />Possible values:<br /><br />* Retrocharge<br /><br />* RetrochargeReversal",
           "type": "string"
         },
         "AmazonOrderId": {
@@ -2532,7 +2532,7 @@
       "type": "object",
       "properties": {
         "TaxCollectionModel": {
-          "description": "The tax collection model applied to the item.\n\nPossible values:\n\n* MarketplaceFacilitator - Tax is withheld and remitted to the taxing authority by Amazon on behalf of the seller.\n\n* Standard - Tax is paid to the seller and not remitted to the taxing authority by Amazon.",
+          "description": "The tax collection model applied to the item.<br /><br />Possible values:<br /><br />* MarketplaceFacilitator - Tax is withheld and remitted to the taxing authority by Amazon on behalf of the seller.<br /><br />* Standard - Tax is paid to the seller and not remitted to the taxing authority by Amazon.",
           "type": "string"
         },
         "TaxesWithheld": {

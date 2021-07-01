@@ -30,7 +30,7 @@
         "tags": [
           "productPricing"
         ],
-        "description": "Returns pricing information for a seller's offer listings based on seller SKU or ASIN.\n\n**Usage Plans:**\n\n| Plan type | Rate (requests per second) | Burst |\n| ---- | ---- | ---- |\n|Default| 10 | 20 |\n|Selling partner specific| Variable | Variable |\n\nThe x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns pricing information for a seller's offer listings based on seller SKU or ASIN.<br /><br />**Usage Plans:**<br /><br />| Plan type | Rate (requests per second) | Burst |<br />| ---- | ---- | ---- |<br />|Default| 10 | 20 |<br />|Selling partner specific| Variable | Variable |<br /><br />The x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getPricing",
         "parameters": [
           {
@@ -624,7 +624,7 @@
         "tags": [
           "productPricing"
         ],
-        "description": "Returns competitive pricing information for a seller's offer listings based on seller SKU or ASIN.\n\n**Usage Plans:**\n\n| Plan type | Rate (requests per second) | Burst |\n| ---- | ---- | ---- |\n|Default| 10 | 20 |\n|Selling partner specific| Variable | Variable |\n\nThe x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns competitive pricing information for a seller's offer listings based on seller SKU or ASIN.<br /><br />**Usage Plans:**<br /><br />| Plan type | Rate (requests per second) | Burst |<br />| ---- | ---- | ---- |<br />|Default| 10 | 20 |<br />|Selling partner specific| Variable | Variable |<br /><br />The x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getCompetitivePricing",
         "parameters": [
           {
@@ -1524,7 +1524,7 @@
         "tags": [
           "productPricing"
         ],
-        "description": "Returns the lowest priced offers for a single SKU listing.\n\n**Usage Plans:**\n\n| Plan type | Rate (requests per second) | Burst |\n| ---- | ---- | ---- |\n|Default| 5 | 10 |\n|Selling partner specific| Variable | Variable |\n\nThe x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns the lowest priced offers for a single SKU listing.<br /><br />**Usage Plans:**<br /><br />| Plan type | Rate (requests per second) | Burst |<br />| ---- | ---- | ---- |<br />|Default| 5 | 10 |<br />|Selling partner specific| Variable | Variable |<br /><br />The x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getListingOffers",
         "parameters": [
           {
@@ -2013,7 +2013,7 @@
         "tags": [
           "productPricing"
         ],
-        "description": "Returns the lowest priced offers for a single item based on ASIN.\n\n**Usage Plans:**\n\n| Plan type | Rate (requests per second) | Burst |\n| ---- | ---- | ---- |\n|Default| 5 | 10 |\n|Selling partner specific| Variable | Variable |\n\nThe x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns the lowest priced offers for a single item based on ASIN.<br /><br />**Usage Plans:**<br /><br />| Plan type | Rate (requests per second) | Burst |<br />| ---- | ---- | ---- |<br />|Default| 5 | 10 |<br />|Selling partner specific| Variable | Variable |<br /><br />The x-amzn-RateLimit-Limit response header returns the usage plan rate limits that were applied to the requested operation. Rate limits for some selling partners will vary from the default rate and burst shown in the table above. For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getItemOffers",
         "parameters": [
           {
@@ -2734,7 +2734,7 @@
       "properties": {
         "CompetitivePriceId": {
           "type": "string",
-          "description": "The pricing model for each price that is returned.\n\nPossible values:\n\n* 1 - New Buy Box Price.\n* 2 - Used Buy Box Price."
+          "description": "The pricing model for each price that is returned.<br /><br />Possible values:<br /><br />* 1 - New Buy Box Price.<br />* 2 - Used Buy Box Price."
         },
         "Price": {
           "description": "Pricing information for a given CompetitivePriceId value.",
@@ -2901,7 +2901,7 @@
         },
         "FulfillmentChannel": {
           "type": "string",
-          "description": "The fulfillment channel for the offer listing. Possible values:\n\n* Amazon - Fulfilled by Amazon.\n* Merchant - Fulfilled by the seller."
+          "description": "The fulfillment channel for the offer listing. Possible values:<br /><br />* Amazon - Fulfilled by Amazon.<br />* Merchant - Fulfilled by the seller."
         },
         "ItemCondition": {
           "type": "string",

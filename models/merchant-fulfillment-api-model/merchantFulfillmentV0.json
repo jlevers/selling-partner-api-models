@@ -30,7 +30,7 @@
         "tags": [
           "merchantFulfillment"
         ],
-        "description": "Returns a list of shipping service offers that satisfy the specified shipment request details.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns a list of shipping service offers that satisfy the specified shipment request details.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 1 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getEligibleShipmentServicesOld",
         "parameters": [
           {
@@ -371,7 +371,7 @@
         "tags": [
           "merchantFulfillment"
         ],
-        "description": "Returns a list of shipping service offers that satisfy the specified shipment request details.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns a list of shipping service offers that satisfy the specified shipment request details.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 1 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getEligibleShipmentServices",
         "parameters": [
           {
@@ -712,7 +712,7 @@
         "tags": [
           "merchantFulfillment"
         ],
-        "description": "Returns the shipment information for an existing shipment.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns the shipment information for an existing shipment.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 1 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getShipment",
         "parameters": [
           {
@@ -965,7 +965,7 @@
         "tags": [
           "merchantFulfillment"
         ],
-        "description": "Cancel the shipment indicated by the specified shipment identifier.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Cancel the shipment indicated by the specified shipment identifier.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 1 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "cancelShipment",
         "parameters": [
           {
@@ -1217,7 +1217,7 @@
         "tags": [
           "merchantFulfillment"
         ],
-        "description": "Cancel the shipment indicated by the specified shipment identifer.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Cancel the shipment indicated by the specified shipment identifer.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 1 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "cancelShipmentOld",
         "parameters": [
           {
@@ -1469,7 +1469,7 @@
         "tags": [
           "merchantFulfillment"
         ],
-        "description": "Create a shipment with the information provided.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Create a shipment with the information provided.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 1 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "createShipment",
         "parameters": [
           {
@@ -1800,7 +1800,7 @@
         "tags": [
           "merchantFulfillment"
         ],
-        "description": "Get a list of additional seller inputs required for a ship method. This is generally used for international shipping.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Get a list of additional seller inputs required for a ship method. This is generally used for international shipping.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 1 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getAdditionalSellerInputsOld",
         "parameters": [
           {
@@ -2015,7 +2015,7 @@
         "tags": [
           "merchantFulfillment"
         ],
-        "description": "Gets a list of additional seller inputs required for a ship method. This is generally used for international shipping.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| 1 | 1 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Gets a list of additional seller inputs required for a ship method. This is generally used for international shipping.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 1 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getAdditionalSellerInputs",
         "parameters": [
           {
@@ -2721,7 +2721,7 @@
       }
     },
     "CustomTextForLabel": {
-      "description": "Custom text to print on the label.\n\nNote: Custom text is only included on labels that are in ZPL format (ZPL203). FedEx does not support CustomTextForLabel.",
+      "description": "Custom text to print on the label.<br /><br />Note: Custom text is only included on labels that are in ZPL format (ZPL203). FedEx does not support CustomTextForLabel.",
       "type": "string",
       "maxLength": 14
       
@@ -3096,7 +3096,7 @@
       "maxLength": 30
     },
     "PredefinedPackageDimensions": {
-      "description": "An enumeration of predefined parcel tokens. If you specify a PredefinedPackageDimensions token, you are not obligated to use a branded package from a carrier. For example, if you specify the FedEx_Box_10kg token, you do not have to use that particular package from FedEx. You are only obligated to use a box that matches the dimensions specified by the token.\n\nNote: Please note that carriers can have restrictions on the type of package allowed for certain ship methods. Check the carrier website for all details. Example: Flat rate pricing is available when materials are sent by USPS in a USPS-produced Flat Rate Envelope or Box.",
+      "description": "An enumeration of predefined parcel tokens. If you specify a PredefinedPackageDimensions token, you are not obligated to use a branded package from a carrier. For example, if you specify the FedEx_Box_10kg token, you do not have to use that particular package from FedEx. You are only obligated to use a box that matches the dimensions specified by the token.<br /><br />Note: Please note that carriers can have restrictions on the type of package allowed for certain ship methods. Check the carrier website for all details. Example: Flat rate pricing is available when materials are sent by USPS in a USPS-produced Flat Rate Envelope or Box.",
       "type": "string",
       "enum": [
         "FedEx_Box_10kg",
@@ -3512,11 +3512,11 @@
         },
         {
           "value": "RefundPending",
-          "description": "The seller requested a label refund by calling the cancelShipment operation, and the refund request is being processed by the carrier.\n\nNote:\n\n* A seller can create a new shipment for an order while Status=RefundPending for a canceled shipment.\n* After a label refund is requested by calling the cancelShipment operation, the order status of the order remains \"Shipped\"."
+          "description": "The seller requested a label refund by calling the cancelShipment operation, and the refund request is being processed by the carrier.<br /><br />Note:<br /><br />* A seller can create a new shipment for an order while Status=RefundPending for a canceled shipment.<br />* After a label refund is requested by calling the cancelShipment operation, the order status of the order remains \"Shipped\"."
         },
         {
           "value": "RefundRejected",
-          "description": "The label refund request was rejected by the carrier. A refund request is rejected for either of the following reasons:\n\n* The cancellation window has expired. Cancellation policies vary by carrier. For more information about carrier cancellation policies, see the Seller Central Help.\n* The carrier has already accepted the shipment for delivery."
+          "description": "The label refund request was rejected by the carrier. A refund request is rejected for either of the following reasons:<br /><br />* The cancellation window has expired. Cancellation policies vary by carrier. For more information about carrier cancellation policies, see the Seller Central Help.<br />* The carrier has already accepted the shipment for delivery."
         },
         {
           "value": "RefundApplied",
@@ -3669,7 +3669,7 @@
           "$ref": "#/definitions/CurrencyAmount"
         },
         "CarrierWillPickUp": {
-          "description": "When true, the carrier will pick up the package.\n\nNote: Scheduled carrier pickup is available only using Dynamex (US), DPD (UK), and Royal Mail (UK).",
+          "description": "When true, the carrier will pick up the package.<br /><br />Note: Scheduled carrier pickup is available only using Dynamex (US), DPD (UK), and Royal Mail (UK).",
           "type": "boolean"
         },
         "CarrierWillPickUpOption": {

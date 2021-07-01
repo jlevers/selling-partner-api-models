@@ -153,7 +153,7 @@
         "tags": [
           "sellers"
         ],
-        "description": "Returns a list of marketplaces that the seller submitting the request can sell in and information about the seller's participation in those marketplaces.\n\n**Usage Plan:**\n\n| Rate (requests per second) | Burst |\n| ---- | ---- |\n| .016 | 15 |\n\nFor more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
+        "description": "Returns a list of marketplaces that the seller submitting the request can sell in and information about the seller's participation in those marketplaces.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| .016 | 15 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getMarketplaceParticipations",
         "responses": {
           "200": {
