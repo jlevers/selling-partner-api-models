@@ -714,6 +714,9 @@
         ],
         "description": "Returns the shipment information for an existing shipment.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 1 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getShipment",
+        "x-restricted": {
+          "generic": true
+        },
         "parameters": [
           {
             "name": "shipmentId",
@@ -967,6 +970,9 @@
         ],
         "description": "Cancel the shipment indicated by the specified shipment identifier.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 1 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "cancelShipment",
+        "x-restricted": {
+          "generic": true
+        },
         "parameters": [
           {
             "name": "shipmentId",
@@ -1219,6 +1225,9 @@
         ],
         "description": "Cancel the shipment indicated by the specified shipment identifer.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 1 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "cancelShipmentOld",
+        "x-restricted": {
+          "generic": true
+        },
         "parameters": [
           {
             "name": "shipmentId",
@@ -1471,6 +1480,9 @@
         ],
         "description": "Create a shipment with the information provided.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 1 | 1 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "createShipment",
+        "x-restricted": {
+          "generic": true
+        },
         "parameters": [
           {
             "in": "body",

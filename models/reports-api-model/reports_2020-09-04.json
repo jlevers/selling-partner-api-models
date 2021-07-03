@@ -1507,12 +1507,22 @@
         ],
         "description": "Returns the information required for retrieving a report document's contents. This includes a presigned URL for the report document as well as the information required to decrypt the document's contents.<br /><br />**Usage Plan:**<br /><br />| Rate (requests per second) | Burst |<br />| ---- | ---- |<br />| 0.0167 | 15 |<br /><br />For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner API documentation.",
         "operationId": "getReportDocument",
+        "x-restricted": {
+          "specific": true
+        },
         "parameters": [
           {
             "name": "reportDocumentId",
             "in": "path",
             "description": "The identifier for the report document.",
             "required": true,
+            "type": "string"
+          },
+          {
+            "name": "reportType",
+            "in": "query",
+            "description": "The name of the document's report type.",
+            "required": false,
             "type": "string"
           }
         ],
